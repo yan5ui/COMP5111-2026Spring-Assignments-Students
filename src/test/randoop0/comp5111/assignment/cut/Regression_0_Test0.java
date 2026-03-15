@@ -10,9 +10,9 @@ public class Regression_0_Test0 {
     public static boolean debug = false;
 
     @Test
-    public void test0001() throws Throwable {
+    public void test00001() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0001");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00001");
         comp5111.assignment.cut.Subject subject0 = null;
         // The following exception was thrown during execution in test generation
         try {
@@ -24,25 +24,25 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0002() throws Throwable {
+    public void test00002() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0002");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00002");
         int int2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.calcDaysInMonth((int) 'a', (int) (byte) 10);
         org.junit.Assert.assertTrue("'" + int2 + "' != '" + 31 + "'", int2 == 31);
     }
 
     @Test
-    public void test0003() throws Throwable {
+    public void test00003() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0003");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00003");
         java.lang.String str1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.dayStr((int) (byte) 1);
         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "1st" + "'", str1, "1st");
     }
 
     @Test
-    public void test0004() throws Throwable {
+    public void test00004() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0004");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00004");
         comp5111.assignment.cut.Subject subject0 = null;
         // The following exception was thrown during execution in test generation
         try {
@@ -54,17 +54,17 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0005() throws Throwable {
+    public void test00005() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0005");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00005");
         int int2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.calcDaysInMonth(31, 0);
         org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
     }
 
     @Test
-    public void test0006() throws Throwable {
+    public void test00006() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0006");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00006");
         java.nio.ByteBuffer byteBuffer1 = null;
         java.lang.StringBuilder stringBuilder2 = null;
         // The following exception was thrown during execution in test generation
@@ -77,57 +77,57 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0007() throws Throwable {
+    public void test00007() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0007");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00007");
         java.lang.Boolean boolean1 = comp5111.assignment.cut.Subject.StringAlgorithms.strToBoolean("hi!");
         org.junit.Assert.assertNull(boolean1);
     }
 
     @Test
-    public void test0008() throws Throwable {
+    public void test00008() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0008");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00008");
         java.util.List<java.lang.String> strList6 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.listDatesBetween((int) (short) 1, (int) '4', 0, (int) '4', (int) ' ', (int) (byte) -1);
         org.junit.Assert.assertNotNull(strList6);
     }
 
     @Test
-    public void test0009() throws Throwable {
+    public void test00009() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0009");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00009");
         boolean boolean2 = comp5111.assignment.cut.Subject.StringAlgorithms.startsWithIgnoreCase("", "");
         org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + true + "'", boolean2 == true);
     }
 
     @Test
-    public void test0010() throws Throwable {
+    public void test00010() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0010");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00010");
         java.lang.String str1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.month2MonAbbr((int) '#');
         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "(invalid)" + "'", str1, "(invalid)");
     }
 
     @Test
-    public void test0011() throws Throwable {
+    public void test00011() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0011");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00011");
         int int1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.daysInYear((int) (short) -1);
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + 365 + "'", int1 == 365);
     }
 
     @Test
-    public void test0012() throws Throwable {
+    public void test00012() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0012");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00012");
         java.lang.Boolean boolean1 = comp5111.assignment.cut.Subject.StringAlgorithms.strToBoolean("(invalid)");
         org.junit.Assert.assertNull(boolean1);
     }
 
     @Test
-    public void test0013() throws Throwable {
+    public void test00013() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0013");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00013");
         comp5111.assignment.cut.Subject subject0 = null;
         // The following exception was thrown during execution in test generation
         try {
@@ -139,17 +139,17 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0014() throws Throwable {
+    public void test00014() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0014");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00014");
         java.lang.String str3 = comp5111.assignment.cut.Subject.StringAlgorithms.padRight("", (short) (byte) -1, '#');
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "" + "'", str3, "");
     }
 
     @Test
-    public void test0015() throws Throwable {
+    public void test00015() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0015");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00015");
         comp5111.assignment.cut.Subject subject0 = null;
         // The following exception was thrown during execution in test generation
         try {
@@ -161,9 +161,9 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0016() throws Throwable {
+    public void test00016() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0016");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00016");
         // The following exception was thrown during execution in test generation
         try {
             int int6 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.daysBetweenDates((int) ' ', 1, (-1), 0, 0, 0);
@@ -174,48 +174,48 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0017() throws Throwable {
+    public void test00017() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0017");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00017");
         int int1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.getQuarter(0);
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + (-1) + "'", int1 == (-1));
     }
 
     @Test
-    public void test0018() throws Throwable {
+    public void test00018() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0018");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00018");
         comp5111.assignment.cut.Subject.StringAlgorithms stringAlgorithms0 = new comp5111.assignment.cut.Subject.StringAlgorithms();
     }
 
     @Test
-    public void test0019() throws Throwable {
+    public void test00019() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0019");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00019");
         java.lang.String str3 = comp5111.assignment.cut.Subject.StringAlgorithms.padRight("", (short) (byte) 0, 'a');
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "" + "'", str3, "");
     }
 
     @Test
-    public void test0020() throws Throwable {
+    public void test00020() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0020");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00020");
         java.lang.String str1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.dayStr((int) (byte) 100);
         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "(invalid)" + "'", str1, "(invalid)");
     }
 
     @Test
-    public void test0021() throws Throwable {
+    public void test00021() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0021");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00021");
         int int2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.daysBetweenDateStrings("hi!", "hi!");
         org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-2147483648) + "'", int2 == (-2147483648));
     }
 
     @Test
-    public void test0022() throws Throwable {
+    public void test00022() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0022");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00022");
         // The following exception was thrown during execution in test generation
         try {
             int int6 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.daysBetweenDates((int) (byte) 1, (int) '#', 0, (-1), (-1), (int) '#');
@@ -226,25 +226,25 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0023() throws Throwable {
+    public void test00023() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0023");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00023");
         int int1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.getQuarter((int) (byte) 100);
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + (-1) + "'", int1 == (-1));
     }
 
     @Test
-    public void test0024() throws Throwable {
+    public void test00024() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0024");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00024");
         java.lang.Boolean boolean4 = comp5111.assignment.cut.Subject.StringAlgorithms.strToBoolean("", "1st", "", "");
         org.junit.Assert.assertEquals("'" + boolean4 + "' != '" + false + "'", boolean4, false);
     }
 
     @Test
-    public void test0025() throws Throwable {
+    public void test00025() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0025");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00025");
         comp5111.assignment.cut.Subject subject0 = null;
         // The following exception was thrown during execution in test generation
         try {
@@ -256,17 +256,17 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0026() throws Throwable {
+    public void test00026() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0026");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00026");
         java.lang.String str1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.roundSecondToString(1L);
         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "1 S" + "'", str1, "1 S");
     }
 
     @Test
-    public void test0027() throws Throwable {
+    public void test00027() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0027");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00027");
         comp5111.assignment.cut.Subject subject0 = null;
         // The following exception was thrown during execution in test generation
         try {
@@ -278,97 +278,97 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0028() throws Throwable {
+    public void test00028() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0028");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00028");
         java.lang.String str3 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.formatFullDate((-1), (-2147483648), 0);
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "(invalid)" + "'", str3, "(invalid)");
     }
 
     @Test
-    public void test0029() throws Throwable {
+    public void test00029() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0029");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00029");
         boolean boolean2 = comp5111.assignment.cut.Subject.StringAlgorithms.startsWithIgnoreCase("1 S", "hi!");
         org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
     }
 
     @Test
-    public void test0030() throws Throwable {
+    public void test00030() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0030");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00030");
         java.lang.String str1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.month2MonAbbr((int) (short) 0);
         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "(invalid)" + "'", str1, "(invalid)");
     }
 
     @Test
-    public void test0031() throws Throwable {
+    public void test00031() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0031");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00031");
         java.lang.String str2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.firstDayOfMonth((int) (short) 100, (int) (byte) 10);
         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "0100-10-01" + "'", str2, "0100-10-01");
     }
 
     @Test
-    public void test0032() throws Throwable {
+    public void test00032() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0032");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00032");
         int int2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.daysBetweenDateStrings("0100-10-01", "(invalid)");
         org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-2147483648) + "'", int2 == (-2147483648));
     }
 
     @Test
-    public void test0033() throws Throwable {
+    public void test00033() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0033");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00033");
         java.lang.String str3 = comp5111.assignment.cut.Subject.StringAlgorithms.padRight("(inva", (short) -1, '4');
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "(inva" + "'", str3, "(inva");
     }
 
     @Test
-    public void test0034() throws Throwable {
+    public void test00034() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0034");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00034");
         int int2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.calcDaysInMonth((int) '#', (int) (byte) 10);
         org.junit.Assert.assertTrue("'" + int2 + "' != '" + 31 + "'", int2 == 31);
     }
 
     @Test
-    public void test0035() throws Throwable {
+    public void test00035() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0035");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00035");
         java.lang.String str1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.month2MonAbbr(0);
         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "(invalid)" + "'", str1, "(invalid)");
     }
 
     @Test
-    public void test0036() throws Throwable {
+    public void test00036() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0036");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00036");
         java.lang.String str3 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.formatFullDate(31, 1, (int) (byte) -1);
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "(invalid)" + "'", str3, "(invalid)");
     }
 
     @Test
-    public void test0037() throws Throwable {
+    public void test00037() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0037");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00037");
         java.lang.String str1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.month2MonAbbr(31);
         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "(invalid)" + "'", str1, "(invalid)");
     }
 
     @Test
-    public void test0038() throws Throwable {
+    public void test00038() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0038");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00038");
         int int1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.monAbbr2month("hi!");
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + (-1) + "'", int1 == (-1));
     }
 
     @Test
-    public void test0039() throws Throwable {
+    public void test00039() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0039");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00039");
         comp5111.assignment.cut.Subject subject0 = null;
         comp5111.assignment.cut.Subject.GamePlayer[] gamePlayerArray2 = new comp5111.assignment.cut.Subject.GamePlayer[] {};
         // The following exception was thrown during execution in test generation
@@ -382,9 +382,9 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0040() throws Throwable {
+    public void test00040() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0040");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00040");
         comp5111.assignment.cut.Subject subject0 = null;
         // The following exception was thrown during execution in test generation
         try {
@@ -396,17 +396,17 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0041() throws Throwable {
+    public void test00041() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0041");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00041");
         java.lang.String str3 = comp5111.assignment.cut.Subject.StringAlgorithms.padLeft("hi!", (short) -1, '4');
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "hi!" + "'", str3, "hi!");
     }
 
     @Test
-    public void test0042() throws Throwable {
+    public void test00042() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0042");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00042");
         // The following exception was thrown during execution in test generation
         try {
             int int6 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.daysBetweenDates(1, (-2147483648), (int) (byte) -1, 100, (int) (short) 100, (-2147483648));
@@ -417,41 +417,41 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0043() throws Throwable {
+    public void test00043() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0043");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00043");
         boolean boolean2 = comp5111.assignment.cut.Subject.StringAlgorithms.startsWithIgnoreCase("1 S", "");
         org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + true + "'", boolean2 == true);
     }
 
     @Test
-    public void test0044() throws Throwable {
+    public void test00044() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0044");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00044");
         boolean boolean2 = comp5111.assignment.cut.Subject.StringAlgorithms.startsWithIgnoreCase("0100-10-01", "1 S");
         org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
     }
 
     @Test
-    public void test0045() throws Throwable {
+    public void test00045() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0045");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00045");
         java.lang.Boolean boolean1 = comp5111.assignment.cut.Subject.StringAlgorithms.strToBoolean("");
         org.junit.Assert.assertNull(boolean1);
     }
 
     @Test
-    public void test0046() throws Throwable {
+    public void test00046() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0046");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00046");
         java.util.List<java.lang.String> strList6 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.listDatesBetween(0, (int) '4', 100, (int) (short) 10, 100, (int) (short) 0);
         org.junit.Assert.assertNotNull(strList6);
     }
 
     @Test
-    public void test0047() throws Throwable {
+    public void test00047() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0047");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00047");
         byte[] byteArray1 = null;
         // The following exception was thrown during execution in test generation
         try {
@@ -463,48 +463,48 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0048() throws Throwable {
+    public void test00048() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0048");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00048");
         java.util.List<java.lang.String> strList6 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.listDatesBetween(0, 0, 365, 0, 31, 0);
         org.junit.Assert.assertNotNull(strList6);
     }
 
     @Test
-    public void test0049() throws Throwable {
+    public void test00049() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0049");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00049");
         comp5111.assignment.cut.Subject.DateTimeAlgorithms dateTimeAlgorithms0 = new comp5111.assignment.cut.Subject.DateTimeAlgorithms();
     }
 
     @Test
-    public void test0050() throws Throwable {
+    public void test00050() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0050");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00050");
         boolean boolean1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.judgeLeapYear((int) (short) 1);
         org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
     }
 
     @Test
-    public void test0051() throws Throwable {
+    public void test00051() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0051");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00051");
         java.lang.String str1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.roundSecondToString((long) 31);
         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "31 S" + "'", str1, "31 S");
     }
 
     @Test
-    public void test0052() throws Throwable {
+    public void test00052() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0052");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00052");
         int int2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.calcDaysInMonth((int) (short) -1, (int) (byte) -1);
         org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
     }
 
     @Test
-    public void test0053() throws Throwable {
+    public void test00053() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0053");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00053");
         comp5111.assignment.cut.Subject subject0 = null;
         // The following exception was thrown during execution in test generation
         try {
@@ -516,57 +516,57 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0054() throws Throwable {
+    public void test00054() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0054");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00054");
         java.lang.String str3 = comp5111.assignment.cut.Subject.StringAlgorithms.padRight("(invalid)", (short) (byte) -1, ' ');
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "(invalid)" + "'", str3, "(invalid)");
     }
 
     @Test
-    public void test0055() throws Throwable {
+    public void test00055() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0055");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00055");
         int int4 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.monthsBetween(10, (int) (byte) -1, 100, 10);
         org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
     }
 
     @Test
-    public void test0056() throws Throwable {
+    public void test00056() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0056");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00056");
         int int2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.daysBetweenDateStrings("0100-10-01", "1 S");
         org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-2147483648) + "'", int2 == (-2147483648));
     }
 
     @Test
-    public void test0057() throws Throwable {
+    public void test00057() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0057");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00057");
         java.lang.String str2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.lastDayOfMonth((int) '4', 100);
         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "(invalid)" + "'", str2, "(invalid)");
     }
 
     @Test
-    public void test0058() throws Throwable {
+    public void test00058() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0058");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00058");
         boolean boolean2 = comp5111.assignment.cut.Subject.StringAlgorithms.startsWithIgnoreCase("1st", "1st");
         org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + true + "'", boolean2 == true);
     }
 
     @Test
-    public void test0059() throws Throwable {
+    public void test00059() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0059");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00059");
         int int2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.calcDaysInMonth((int) (byte) 10, (int) (short) 10);
         org.junit.Assert.assertTrue("'" + int2 + "' != '" + 31 + "'", int2 == 31);
     }
 
     @Test
-    public void test0060() throws Throwable {
+    public void test00060() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0060");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00060");
         comp5111.assignment.cut.Subject subject0 = null;
         // The following exception was thrown during execution in test generation
         try {
@@ -578,9 +578,9 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0061() throws Throwable {
+    public void test00061() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0061");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00061");
         comp5111.assignment.cut.Subject subject0 = null;
         // The following exception was thrown during execution in test generation
         try {
@@ -592,25 +592,25 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0062() throws Throwable {
+    public void test00062() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0062");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00062");
         java.lang.String str2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.firstDayOfMonth((int) (byte) 10, 100);
         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "(invalid)" + "'", str2, "(invalid)");
     }
 
     @Test
-    public void test0063() throws Throwable {
+    public void test00063() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0063");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00063");
         java.util.List<java.lang.String> strList6 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.listDatesBetween(31, 31, 0, (int) ' ', (int) (short) 10, 100);
         org.junit.Assert.assertNotNull(strList6);
     }
 
     @Test
-    public void test0064() throws Throwable {
+    public void test00064() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0064");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00064");
         // The following exception was thrown during execution in test generation
         try {
             int int6 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.daysBetweenDates(100, 10, (-1), (int) (byte) 10, (int) (short) 100, 1);
@@ -621,17 +621,17 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0065() throws Throwable {
+    public void test00065() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0065");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00065");
         boolean boolean2 = comp5111.assignment.cut.Subject.StringAlgorithms.startsWithIgnoreCase("1 S", "(invalid)");
         org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
     }
 
     @Test
-    public void test0066() throws Throwable {
+    public void test00066() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0066");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00066");
         comp5111.assignment.cut.Subject subject0 = null;
         // The following exception was thrown during execution in test generation
         try {
@@ -643,33 +643,33 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0067() throws Throwable {
+    public void test00067() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0067");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00067");
         java.util.List<java.lang.String> strList6 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.listDatesBetween((int) (byte) -1, (int) (byte) -1, (int) (byte) 0, 31, (int) (byte) -1, (int) (short) 100);
         org.junit.Assert.assertNotNull(strList6);
     }
 
     @Test
-    public void test0068() throws Throwable {
+    public void test00068() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0068");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00068");
         java.lang.String str3 = comp5111.assignment.cut.Subject.StringAlgorithms.padRight("31 S", (short) 0, '#');
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "31 S" + "'", str3, "31 S");
     }
 
     @Test
-    public void test0069() throws Throwable {
+    public void test00069() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0069");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00069");
         boolean boolean1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.judgeLeapYear((int) (byte) -1);
         org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
     }
 
     @Test
-    public void test0070() throws Throwable {
+    public void test00070() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0070");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00070");
         java.lang.String[] strArray1 = new java.lang.String[] { "hi!" };
         java.lang.String[] strArray2 = comp5111.assignment.cut.Subject.StringAlgorithms.trimArrayElements(strArray1);
         java.lang.Class<?> wildcardClass3 = strArray1.getClass();
@@ -679,129 +679,129 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0071() throws Throwable {
+    public void test00071() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0071");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00071");
         java.lang.String str2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.lastDayOfMonth((int) (short) 1, (int) (short) 100);
         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "(invalid)" + "'", str2, "(invalid)");
     }
 
     @Test
-    public void test0072() throws Throwable {
+    public void test00072() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0072");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00072");
         java.lang.String str1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.dayStr((-2147483648));
         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "(invalid)" + "'", str1, "(invalid)");
     }
 
     @Test
-    public void test0073() throws Throwable {
+    public void test00073() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0073");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00073");
         int int1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.getQuarter((int) (short) 100);
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + (-1) + "'", int1 == (-1));
     }
 
     @Test
-    public void test0074() throws Throwable {
+    public void test00074() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0074");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00074");
         java.lang.String str2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.firstDayOfMonth((-2147483648), (int) (byte) 10);
         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "-2147483648-10-01" + "'", str2, "-2147483648-10-01");
     }
 
     @Test
-    public void test0075() throws Throwable {
+    public void test00075() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0075");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00075");
         java.lang.String str3 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.formatFullDate((int) 'a', (int) '4', (int) (byte) 1);
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "(invalid)" + "'", str3, "(invalid)");
     }
 
     @Test
-    public void test0076() throws Throwable {
+    public void test00076() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0076");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00076");
         int int4 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.monthsBetween(0, (int) (byte) 100, 100, (int) (byte) -1);
         org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
     }
 
     @Test
-    public void test0077() throws Throwable {
+    public void test00077() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0077");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00077");
         java.lang.String str1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.roundSecondToString((long) (byte) 100);
         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "2 M" + "'", str1, "2 M");
     }
 
     @Test
-    public void test0078() throws Throwable {
+    public void test00078() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0078");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00078");
         java.lang.String str1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.dayStr((int) (short) -1);
         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "(invalid)" + "'", str1, "(invalid)");
     }
 
     @Test
-    public void test0079() throws Throwable {
+    public void test00079() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0079");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00079");
         boolean boolean1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.judgeLeapYear((int) '#');
         org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
     }
 
     @Test
-    public void test0080() throws Throwable {
+    public void test00080() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0080");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00080");
         java.lang.String str1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.dayStr((int) (byte) 0);
         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "(invalid)" + "'", str1, "(invalid)");
     }
 
     @Test
-    public void test0081() throws Throwable {
+    public void test00081() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0081");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00081");
         int int2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.daysBetweenDateStrings("", "1st");
         org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-2147483648) + "'", int2 == (-2147483648));
     }
 
     @Test
-    public void test0082() throws Throwable {
+    public void test00082() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0082");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00082");
         int int4 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.monthsBetween(100, (int) 'a', (int) (byte) -1, (int) (short) 100);
         org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
     }
 
     @Test
-    public void test0083() throws Throwable {
+    public void test00083() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0083");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00083");
         java.lang.String str3 = comp5111.assignment.cut.Subject.StringAlgorithms.padLeft("hi!", (short) 0, '4');
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "hi!" + "'", str3, "hi!");
     }
 
     @Test
-    public void test0084() throws Throwable {
+    public void test00084() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0084");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00084");
         int int1 = comp5111.assignment.cut.Subject.StringAlgorithms.extractIntInStr("hi!");
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + 0 + "'", int1 == 0);
     }
 
     @Test
-    public void test0085() throws Throwable {
+    public void test00085() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0085");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00085");
         java.lang.String str3 = comp5111.assignment.cut.Subject.StringAlgorithms.padRight("-2147483648-10-01", (short) 100, 'a');
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "-2147483648-10-01aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" + "'", str3, "-2147483648-10-01aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
     }
 
     @Test
-    public void test0086() throws Throwable {
+    public void test00086() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0086");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00086");
         byte[] byteArray2 = new byte[] { (byte) 100 };
         // The following exception was thrown during execution in test generation
         try {
@@ -815,25 +815,25 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0087() throws Throwable {
+    public void test00087() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0087");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00087");
         boolean boolean1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.judgeLeapYear((int) (byte) 10);
         org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
     }
 
     @Test
-    public void test0088() throws Throwable {
+    public void test00088() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0088");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00088");
         boolean boolean2 = comp5111.assignment.cut.Subject.StringAlgorithms.startsWithIgnoreCase("1 S", "1 S");
         org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + true + "'", boolean2 == true);
     }
 
     @Test
-    public void test0089() throws Throwable {
+    public void test00089() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0089");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00089");
         // The following exception was thrown during execution in test generation
         try {
             java.lang.Boolean boolean4 = comp5111.assignment.cut.Subject.StringAlgorithms.strToBoolean("(invalid)", "-2147483648-10-01aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "", "31 S");
@@ -844,26 +844,26 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0090() throws Throwable {
+    public void test00090() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0090");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00090");
         int int1 = comp5111.assignment.cut.Subject.StringAlgorithms.extractIntInStr("(invalid)");
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + 0 + "'", int1 == 0);
     }
 
     @Test
-    public void test0091() throws Throwable {
+    public void test00091() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0091");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00091");
         int[] intArray1 = comp5111.assignment.cut.Subject.StringAlgorithms.getVersionNo("(inva");
         org.junit.Assert.assertNotNull(intArray1);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray1), "[0, 0, 0, 0]");
     }
 
     @Test
-    public void test0092() throws Throwable {
+    public void test00092() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0092");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00092");
         byte[] byteArray6 = new byte[] { (byte) 10, (byte) 10, (byte) 100, (byte) 1, (byte) 1 };
         // The following exception was thrown during execution in test generation
         try {
@@ -877,25 +877,25 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0093() throws Throwable {
+    public void test00093() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0093");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00093");
         java.lang.Boolean boolean4 = comp5111.assignment.cut.Subject.StringAlgorithms.strToBoolean("2 M", "2 M", "-2147483648-10-01", "(invalid)");
         org.junit.Assert.assertEquals("'" + boolean4 + "' != '" + true + "'", boolean4, true);
     }
 
     @Test
-    public void test0094() throws Throwable {
+    public void test00094() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0094");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00094");
         boolean boolean2 = comp5111.assignment.cut.Subject.StringAlgorithms.startsWithIgnoreCase("31 S", "31 S");
         org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + true + "'", boolean2 == true);
     }
 
     @Test
-    public void test0095() throws Throwable {
+    public void test00095() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0095");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00095");
         // The following exception was thrown during execution in test generation
         try {
             int int6 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.daysBetweenDates((int) (short) 0, (int) 'a', 100, (int) (short) 1, 31, (int) (byte) 0);
@@ -906,9 +906,9 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0096() throws Throwable {
+    public void test00096() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0096");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00096");
         // The following exception was thrown during execution in test generation
         try {
             java.lang.Number number1 = comp5111.assignment.cut.Subject.StringAlgorithms.parseNumber("-2147483648-10-01aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
@@ -919,9 +919,9 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0097() throws Throwable {
+    public void test00097() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0097");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00097");
         // The following exception was thrown during execution in test generation
         try {
             java.lang.Number number1 = comp5111.assignment.cut.Subject.StringAlgorithms.parseNumber("(invalid)");
@@ -932,121 +932,121 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0098() throws Throwable {
+    public void test00098() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0098");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00098");
         int int1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.getQuarter((-2147483648));
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + (-1) + "'", int1 == (-1));
     }
 
     @Test
-    public void test0099() throws Throwable {
+    public void test00099() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0099");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00099");
         int int2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.daysBetweenDateStrings("1st", "hi!");
         org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-2147483648) + "'", int2 == (-2147483648));
     }
 
     @Test
-    public void test0100() throws Throwable {
+    public void test00100() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0100");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00100");
         int int1 = comp5111.assignment.cut.Subject.StringAlgorithms.extractIntInStr("31 S");
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + 31 + "'", int1 == 31);
     }
 
     @Test
-    public void test0101() throws Throwable {
+    public void test00101() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0101");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00101");
         java.lang.Boolean boolean1 = comp5111.assignment.cut.Subject.StringAlgorithms.strToBoolean("-2147483648-10-01");
         org.junit.Assert.assertNull(boolean1);
     }
 
     @Test
-    public void test0102() throws Throwable {
+    public void test00102() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0102");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00102");
         int int4 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.monthsBetween(1, (int) '4', (int) (byte) 1, (-1));
         org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
     }
 
     @Test
-    public void test0103() throws Throwable {
+    public void test00103() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0103");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00103");
         java.lang.String str1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.month2MonAbbr((int) (byte) 100);
         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "(invalid)" + "'", str1, "(invalid)");
     }
 
     @Test
-    public void test0104() throws Throwable {
+    public void test00104() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0104");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00104");
         int int1 = comp5111.assignment.cut.Subject.StringAlgorithms.extractIntInStr("0100-10-01");
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + 100 + "'", int1 == 100);
     }
 
     @Test
-    public void test0105() throws Throwable {
+    public void test00105() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0105");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00105");
         int int1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.daysInYear((int) (byte) -1);
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + 365 + "'", int1 == 365);
     }
 
     @Test
-    public void test0106() throws Throwable {
+    public void test00106() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0106");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00106");
         int int2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.calcDaysInMonth((-1), (int) (short) -1);
         org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
     }
 
     @Test
-    public void test0107() throws Throwable {
+    public void test00107() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0107");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00107");
         java.lang.String str2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.firstDayOfMonth(100, 1);
         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "0100-01-01" + "'", str2, "0100-01-01");
     }
 
     @Test
-    public void test0108() throws Throwable {
+    public void test00108() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0108");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00108");
         java.lang.String str2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.firstDayOfMonth((int) (short) 0, 1);
         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "0000-01-01" + "'", str2, "0000-01-01");
     }
 
     @Test
-    public void test0109() throws Throwable {
+    public void test00109() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0109");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00109");
         java.lang.String str3 = comp5111.assignment.cut.Subject.StringAlgorithms.padLeft("0100-01-01", (short) 0, '#');
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "0100-01-01" + "'", str3, "0100-01-01");
     }
 
     @Test
-    public void test0110() throws Throwable {
+    public void test00110() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0110");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00110");
         java.lang.String str2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.firstDayOfMonth((int) (byte) 1, (int) (short) 0);
         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "(invalid)" + "'", str2, "(invalid)");
     }
 
     @Test
-    public void test0111() throws Throwable {
+    public void test00111() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0111");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00111");
         int int1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.monAbbr2month("0000-01-01");
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + (-1) + "'", int1 == (-1));
     }
 
     @Test
-    public void test0112() throws Throwable {
+    public void test00112() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0112");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00112");
         // The following exception was thrown during execution in test generation
         try {
             int int6 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.daysBetweenDates(0, (int) (byte) 0, (int) (byte) 10, (-1), 0, (int) (short) 10);
@@ -1057,9 +1057,9 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0113() throws Throwable {
+    public void test00113() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0113");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00113");
         java.nio.ByteBuffer byteBuffer1 = null;
         java.lang.StringBuilder stringBuilder2 = null;
         // The following exception was thrown during execution in test generation
@@ -1072,129 +1072,129 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0114() throws Throwable {
+    public void test00114() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0114");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00114");
         java.lang.String str3 = comp5111.assignment.cut.Subject.StringAlgorithms.padLeft("0100-01-01", (short) 100, ' ');
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "                                                                                          0100-01-01" + "'", str3, "                                                                                          0100-01-01");
     }
 
     @Test
-    public void test0115() throws Throwable {
+    public void test00115() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0115");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00115");
         int int1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.monAbbr2month("");
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + (-1) + "'", int1 == (-1));
     }
 
     @Test
-    public void test0116() throws Throwable {
+    public void test00116() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0116");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00116");
         int int1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.daysInYear((int) (byte) 0);
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + 366 + "'", int1 == 366);
     }
 
     @Test
-    public void test0117() throws Throwable {
+    public void test00117() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0117");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00117");
         int int1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.getQuarter((int) (short) -1);
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + (-1) + "'", int1 == (-1));
     }
 
     @Test
-    public void test0118() throws Throwable {
+    public void test00118() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0118");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00118");
         int int2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.daysBetweenDateStrings("0100-10-01", "");
         org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-2147483648) + "'", int2 == (-2147483648));
     }
 
     @Test
-    public void test0119() throws Throwable {
+    public void test00119() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0119");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00119");
         int int1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.monAbbr2month("-214");
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + (-1) + "'", int1 == (-1));
     }
 
     @Test
-    public void test0120() throws Throwable {
+    public void test00120() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0120");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00120");
         boolean boolean1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.judgeLeapYear((int) ' ');
         org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + true + "'", boolean1 == true);
     }
 
     @Test
-    public void test0121() throws Throwable {
+    public void test00121() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0121");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00121");
         int int1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.monAbbr2month("-2147483648-10-01");
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + (-1) + "'", int1 == (-1));
     }
 
     @Test
-    public void test0122() throws Throwable {
+    public void test00122() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0122");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00122");
         int int2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.calcDaysInMonth((int) (short) 10, (int) (short) -1);
         org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
     }
 
     @Test
-    public void test0123() throws Throwable {
+    public void test00123() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0123");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00123");
         java.lang.String str3 = comp5111.assignment.cut.Subject.StringAlgorithms.padRight("0100-10-01", (short) (byte) 1, '4');
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "0100-10-01" + "'", str3, "0100-10-01");
     }
 
     @Test
-    public void test0124() throws Throwable {
+    public void test00124() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0124");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00124");
         int int4 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.monthsBetween((int) (byte) -1, 62, 0, 1);
         org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
     }
 
     @Test
-    public void test0125() throws Throwable {
+    public void test00125() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0125");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00125");
         boolean boolean2 = comp5111.assignment.cut.Subject.StringAlgorithms.startsWithIgnoreCase("2 M", "                                                                                          0100-01-01");
         org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
     }
 
     @Test
-    public void test0126() throws Throwable {
+    public void test00126() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0126");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00126");
         int int2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.daysBetweenDateStrings("0100-01-01", "(inva");
         org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-2147483648) + "'", int2 == (-2147483648));
     }
 
     @Test
-    public void test0127() throws Throwable {
+    public void test00127() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0127");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00127");
         boolean boolean2 = comp5111.assignment.cut.Subject.StringAlgorithms.startsWithIgnoreCase("31 S", "hi!");
         org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
     }
 
     @Test
-    public void test0128() throws Throwable {
+    public void test00128() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0128");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00128");
         int int1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.getQuarter((int) (byte) 1);
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + 1 + "'", int1 == 1);
     }
 
     @Test
-    public void test0129() throws Throwable {
+    public void test00129() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0129");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00129");
         // The following exception was thrown during execution in test generation
         try {
             int int6 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.daysBetweenDates((int) (short) 1, (int) (short) 1, (int) (short) 1, 0, (int) (byte) -1, 97);
@@ -1205,17 +1205,17 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0130() throws Throwable {
+    public void test00130() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0130");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00130");
         java.lang.Boolean boolean1 = comp5111.assignment.cut.Subject.StringAlgorithms.strToBoolean("0000-01-01");
         org.junit.Assert.assertNull(boolean1);
     }
 
     @Test
-    public void test0131() throws Throwable {
+    public void test00131() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0131");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00131");
         byte[] byteArray7 = new byte[] { (byte) 1, (byte) 100, (byte) 10, (byte) -1, (byte) 10, (byte) 100 };
         // The following exception was thrown during execution in test generation
         try {
@@ -1229,17 +1229,17 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0132() throws Throwable {
+    public void test00132() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0132");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00132");
         java.lang.String str3 = comp5111.assignment.cut.Subject.StringAlgorithms.padRight("                                                                                          0100-01-01", (short) (byte) 1, ' ');
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "                                                                                          0100-01-01" + "'", str3, "                                                                                          0100-01-01");
     }
 
     @Test
-    public void test0133() throws Throwable {
+    public void test00133() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0133");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00133");
         comp5111.assignment.cut.Subject subject0 = new comp5111.assignment.cut.Subject();
         comp5111.assignment.cut.Subject.GamePlace gamePlace3 = subject0.new GamePlace((int) (short) 10, (int) (short) 10);
         gamePlace3.x((int) 'a');
@@ -1250,120 +1250,105 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0134() throws Throwable {
+    public void test00134() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0134");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00134");
         int int4 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.monthsBetween(62, 0, (int) (short) -1, 0);
         org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
     }
 
     @Test
-    public void test0135() throws Throwable {
+    public void test00135() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0135");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00135");
         int int1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.daysInYear((int) (short) 0);
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + 366 + "'", int1 == 366);
     }
 
     @Test
-    public void test0136() throws Throwable {
+    public void test00136() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0136");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00136");
         java.lang.String str1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.roundSecondToString((long) 1);
         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "1 S" + "'", str1, "1 S");
     }
 
     @Test
-    public void test0137() throws Throwable {
+    public void test00137() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0137");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00137");
         java.lang.String str3 = comp5111.assignment.cut.Subject.StringAlgorithms.padRight("                                                                                          0100-01-01", (short) 1, ' ');
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "                                                                                          0100-01-01" + "'", str3, "                                                                                          0100-01-01");
     }
 
     @Test
-    public void test0138() throws Throwable {
+    public void test00138() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0138");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00138");
         boolean boolean2 = comp5111.assignment.cut.Subject.StringAlgorithms.startsWithIgnoreCase("", "-214");
         org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
     }
 
     @Test
-    public void test0139() throws Throwable {
+    public void test00139() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0139");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00139");
         java.lang.Boolean boolean1 = comp5111.assignment.cut.Subject.StringAlgorithms.strToBoolean("-214");
         org.junit.Assert.assertNull(boolean1);
     }
 
     @Test
-    public void test0140() throws Throwable {
+    public void test00140() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0140");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00140");
         java.lang.String str3 = comp5111.assignment.cut.Subject.StringAlgorithms.padLeft("", (short) (byte) 10, 'a');
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "aaaaaaaaaa" + "'", str3, "aaaaaaaaaa");
     }
 
     @Test
-    public void test0141() throws Throwable {
+    public void test00141() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0141");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00141");
         int int1 = comp5111.assignment.cut.Subject.StringAlgorithms.extractIntInStr(" ");
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + 0 + "'", int1 == 0);
     }
 
     @Test
-    public void test0142() throws Throwable {
+    public void test00142() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0142");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00142");
         boolean boolean2 = comp5111.assignment.cut.Subject.StringAlgorithms.startsWithIgnoreCase("0100-10-01", "-2147483648-10-01");
         org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
     }
 
     @Test
-    public void test0143() throws Throwable {
+    public void test00143() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0143");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00143");
         java.lang.String str1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.roundSecondToString(10L);
         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "10 S" + "'", str1, "10 S");
     }
 
     @Test
-    public void test0144() throws Throwable {
+    public void test00144() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0144");
-        comp5111.assignment.cut.Subject subject0 = new comp5111.assignment.cut.Subject();
-        comp5111.assignment.cut.Subject.GamePlayer gamePlayer2 = subject0.new GamePlayer("-2147483648-10-01");
-        comp5111.assignment.cut.Subject.GamePlace gamePlace5 = subject0.new GamePlace(62, 1);
-        java.lang.String str6 = gamePlace5.toString();
-        comp5111.assignment.cut.Subject.GamePlace gamePlace7 = gamePlace5.clone();
-        int int8 = gamePlace5.x();
-        org.junit.Assert.assertEquals("'" + str6 + "' != '" + "(62, 1)" + "'", str6, "(62, 1)");
-        org.junit.Assert.assertNotNull(gamePlace7);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + 62 + "'", int8 == 62);
-    }
-
-    @Test
-    public void test0145() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0145");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00144");
         boolean boolean2 = comp5111.assignment.cut.Subject.StringAlgorithms.startsWithIgnoreCase("aaaaaaaaaa", "0000-01-01");
         org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
     }
 
     @Test
-    public void test0146() throws Throwable {
+    public void test00145() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0146");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00145");
         java.lang.String str2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.lastDayOfMonth((int) (short) 100, (int) (byte) 1);
         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "0100-01-31" + "'", str2, "0100-01-31");
     }
 
     @Test
-    public void test0147() throws Throwable {
+    public void test00146() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0147");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00146");
         // The following exception was thrown during execution in test generation
         try {
             java.lang.Number number1 = comp5111.assignment.cut.Subject.StringAlgorithms.parseNumber("aaaaaaaaaa");
@@ -1374,121 +1359,121 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0148() throws Throwable {
+    public void test00147() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0148");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00147");
         java.lang.String str1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.dayStr((int) (byte) 10);
         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "10th" + "'", str1, "10th");
     }
 
     @Test
-    public void test0149() throws Throwable {
+    public void test00148() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0149");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00148");
         java.lang.String str1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.dayStr((-1));
         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "(invalid)" + "'", str1, "(invalid)");
     }
 
     @Test
-    public void test0150() throws Throwable {
+    public void test00149() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0150");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00149");
         java.util.List<java.lang.String> strList6 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.listDatesBetween((int) (byte) 10, (int) (short) 100, 100, (int) (byte) 1, (int) (short) 100, (int) (byte) 10);
         org.junit.Assert.assertNotNull(strList6);
     }
 
     @Test
-    public void test0151() throws Throwable {
+    public void test00150() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0151");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00150");
         java.lang.String str1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.roundSecondToString(0L);
         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "0 S" + "'", str1, "0 S");
     }
 
     @Test
-    public void test0152() throws Throwable {
+    public void test00151() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0152");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00151");
         int int2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.daysBetweenDateStrings("0100-10-01", "-2147483648-10-01");
         org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-2147483648) + "'", int2 == (-2147483648));
     }
 
     @Test
-    public void test0153() throws Throwable {
+    public void test00152() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0153");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00152");
         java.util.List<java.lang.String> strList6 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.listDatesBetween(1, 0, 62, (int) (short) 100, 100, 31);
         org.junit.Assert.assertNotNull(strList6);
     }
 
     @Test
-    public void test0154() throws Throwable {
+    public void test00153() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0154");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00153");
         int int1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.daysInYear((-2147483648));
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + 366 + "'", int1 == 366);
     }
 
     @Test
-    public void test0155() throws Throwable {
+    public void test00154() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0155");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00154");
         java.util.List<java.lang.String> strList6 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.listDatesBetween((int) (byte) 10, 31, 100, 31, 0, 365);
         org.junit.Assert.assertNotNull(strList6);
     }
 
     @Test
-    public void test0156() throws Throwable {
+    public void test00155() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0156");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00155");
         java.lang.String str2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.lastDayOfMonth((int) '#', (int) (byte) 10);
         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "0035-10-31" + "'", str2, "0035-10-31");
     }
 
     @Test
-    public void test0157() throws Throwable {
+    public void test00156() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0157");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00156");
         java.lang.String str3 = comp5111.assignment.cut.Subject.StringAlgorithms.padLeft("2 M", (short) (byte) 1, ' ');
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "2 M" + "'", str3, "2 M");
     }
 
     @Test
-    public void test0158() throws Throwable {
+    public void test00157() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0158");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00157");
         int int4 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.monthsBetween(0, 365, 10, (int) (byte) -1);
         org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
     }
 
     @Test
-    public void test0159() throws Throwable {
+    public void test00158() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0159");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00158");
         java.lang.String str3 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.formatFullDate(71, 0, 1);
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "(invalid)" + "'", str3, "(invalid)");
     }
 
     @Test
-    public void test0160() throws Throwable {
+    public void test00159() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0160");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00159");
         int int4 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.monthsBetween((int) ' ', 366, 97, 0);
         org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
     }
 
     @Test
-    public void test0161() throws Throwable {
+    public void test00160() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0161");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00160");
         int int1 = comp5111.assignment.cut.Subject.StringAlgorithms.extractIntInStr("-214");
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + 0 + "'", int1 == 0);
     }
 
     @Test
-    public void test0162() throws Throwable {
+    public void test00161() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0162");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00161");
         // The following exception was thrown during execution in test generation
         try {
             int int6 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.daysBetweenDates((int) (byte) 1, (int) (byte) 0, (int) (byte) 10, 97, (int) (short) 0, (int) (byte) 100);
@@ -1499,9 +1484,9 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0163() throws Throwable {
+    public void test00162() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0163");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00162");
         byte[] byteArray3 = new byte[] {};
         comp5111.assignment.cut.Subject.StringAlgorithms.enlarge((int) (byte) 1, byteArray3, 0);
         comp5111.assignment.cut.Subject.StringAlgorithms.enlarge(100, byteArray3, 0);
@@ -1517,18 +1502,18 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0164() throws Throwable {
+    public void test00163() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0164");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00163");
         int[] intArray1 = comp5111.assignment.cut.Subject.StringAlgorithms.getVersionNo("2 M");
         org.junit.Assert.assertNotNull(intArray1);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray1), "[2, 0, 0, 0]");
     }
 
     @Test
-    public void test0165() throws Throwable {
+    public void test00164() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0165");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00164");
         // The following exception was thrown during execution in test generation
         try {
             int int6 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.daysBetweenDates(97, (int) (short) 10, (int) (short) -1, (int) ' ', 1, 1);
@@ -1539,33 +1524,33 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0166() throws Throwable {
+    public void test00165() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0166");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00165");
         int int1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.getQuarter((int) (byte) -1);
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + (-1) + "'", int1 == (-1));
     }
 
     @Test
-    public void test0167() throws Throwable {
+    public void test00166() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0167");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00166");
         int int1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.getQuarter((int) (short) 10);
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + 4 + "'", int1 == 4);
     }
 
     @Test
-    public void test0168() throws Throwable {
+    public void test00167() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0168");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00167");
         java.lang.String str3 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.formatFullDate((int) 'a', 366, (int) (short) -1);
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "(invalid)" + "'", str3, "(invalid)");
     }
 
     @Test
-    public void test0169() throws Throwable {
+    public void test00168() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0169");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00168");
         comp5111.assignment.cut.Subject subject0 = new comp5111.assignment.cut.Subject();
         comp5111.assignment.cut.Subject.GamePlayer gamePlayer2 = subject0.new GamePlayer("-2147483648-10-01");
         comp5111.assignment.cut.Subject.GamePlace gamePlace5 = subject0.new GamePlace(62, 1);
@@ -1584,57 +1569,57 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0170() throws Throwable {
+    public void test00169() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0170");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00169");
         int int1 = comp5111.assignment.cut.Subject.StringAlgorithms.extractIntInStr("");
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + 0 + "'", int1 == 0);
     }
 
     @Test
-    public void test0171() throws Throwable {
+    public void test00170() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0171");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00170");
         int int1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.monAbbr2month("0100-01-31");
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + (-1) + "'", int1 == (-1));
     }
 
     @Test
-    public void test0172() throws Throwable {
+    public void test00171() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0172");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00171");
         java.lang.String str3 = comp5111.assignment.cut.Subject.StringAlgorithms.padLeft("10th", (short) -1, 'a');
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "10th" + "'", str3, "10th");
     }
 
     @Test
-    public void test0173() throws Throwable {
+    public void test00172() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0173");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00172");
         java.lang.String str1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.month2MonAbbr((int) '4');
         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "(invalid)" + "'", str1, "(invalid)");
     }
 
     @Test
-    public void test0174() throws Throwable {
+    public void test00173() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0174");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00173");
         java.lang.String str2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.firstDayOfMonth(97, (int) '#');
         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "(invalid)" + "'", str2, "(invalid)");
     }
 
     @Test
-    public void test0175() throws Throwable {
+    public void test00174() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0175");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00174");
         java.lang.Boolean boolean1 = comp5111.assignment.cut.Subject.StringAlgorithms.strToBoolean("0 S");
         org.junit.Assert.assertNull(boolean1);
     }
 
     @Test
-    public void test0176() throws Throwable {
+    public void test00175() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0176");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00175");
         // The following exception was thrown during execution in test generation
         try {
             java.lang.Number number1 = comp5111.assignment.cut.Subject.StringAlgorithms.parseNumber("1 S");
@@ -1645,17 +1630,17 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0177() throws Throwable {
+    public void test00176() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0177");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00176");
         java.lang.String str2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.firstDayOfMonth((-1), (int) 'a');
         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "(invalid)" + "'", str2, "(invalid)");
     }
 
     @Test
-    public void test0178() throws Throwable {
+    public void test00177() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0178");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00177");
         // The following exception was thrown during execution in test generation
         try {
             java.lang.Number number1 = comp5111.assignment.cut.Subject.StringAlgorithms.parseNumber("0100-01-31");
@@ -1666,17 +1651,17 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0179() throws Throwable {
+    public void test00178() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0179");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00178");
         boolean boolean1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.judgeLeapYear((int) (short) -1);
         org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
     }
 
     @Test
-    public void test0180() throws Throwable {
+    public void test00179() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0180");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00179");
         java.lang.String[] strArray1 = new java.lang.String[] { "hi!" };
         java.lang.String[] strArray2 = comp5111.assignment.cut.Subject.StringAlgorithms.trimArrayElements(strArray1);
         java.lang.String[] strArray3 = comp5111.assignment.cut.Subject.StringAlgorithms.trimArrayElements(strArray1);
@@ -1690,17 +1675,17 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0181() throws Throwable {
+    public void test00180() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0181");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00180");
         boolean boolean1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.judgeLeapYear((int) (short) 0);
         org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + true + "'", boolean1 == true);
     }
 
     @Test
-    public void test0182() throws Throwable {
+    public void test00181() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0182");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00181");
         // The following exception was thrown during execution in test generation
         try {
             java.lang.Boolean boolean4 = comp5111.assignment.cut.Subject.StringAlgorithms.strToBoolean("2 M", "(invalid)", "(inva", "10 S");
@@ -1711,9 +1696,9 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0183() throws Throwable {
+    public void test00182() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0183");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00182");
         java.nio.ByteBuffer byteBuffer1 = null;
         java.lang.StringBuilder stringBuilder2 = null;
         // The following exception was thrown during execution in test generation
@@ -1726,9 +1711,9 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0184() throws Throwable {
+    public void test00183() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0184");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00183");
         java.nio.ByteBuffer byteBuffer1 = null;
         java.lang.StringBuilder stringBuilder2 = null;
         // The following exception was thrown during execution in test generation
@@ -1741,9 +1726,9 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0185() throws Throwable {
+    public void test00184() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0185");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00184");
         comp5111.assignment.cut.Subject subject0 = new comp5111.assignment.cut.Subject();
         // The following exception was thrown during execution in test generation
         try {
@@ -1755,25 +1740,25 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0186() throws Throwable {
+    public void test00185() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0186");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00185");
         java.lang.String str1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.roundSecondToString((long) ' ');
         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "32 S" + "'", str1, "32 S");
     }
 
     @Test
-    public void test0187() throws Throwable {
+    public void test00186() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0187");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00186");
         java.lang.String str1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.dayStr((int) (short) 100);
         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "(invalid)" + "'", str1, "(invalid)");
     }
 
     @Test
-    public void test0188() throws Throwable {
+    public void test00187() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0188");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00187");
         // The following exception was thrown during execution in test generation
         try {
             int int6 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.daysBetweenDates(366, 10, 0, 0, 31, 1);
@@ -1784,9 +1769,9 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0189() throws Throwable {
+    public void test00188() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0189");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00188");
         comp5111.assignment.cut.Subject subject0 = new comp5111.assignment.cut.Subject();
         comp5111.assignment.cut.Subject.GamePlayer gamePlayer2 = subject0.new GamePlayer("-2147483648-10-01");
         comp5111.assignment.cut.Subject.GamePlace gamePlace5 = subject0.new GamePlace(62, 1);
@@ -1798,17 +1783,17 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0190() throws Throwable {
+    public void test00189() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0190");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00189");
         java.lang.String str3 = comp5111.assignment.cut.Subject.StringAlgorithms.padLeft("GamePlayer{name='Anonymous Player', score=0}", (short) (byte) -1, ' ');
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "GamePlayer{name='Anonymous Player', score=0}" + "'", str3, "GamePlayer{name='Anonymous Player', score=0}");
     }
 
     @Test
-    public void test0191() throws Throwable {
+    public void test00190() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0191");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00190");
         java.nio.ByteBuffer byteBuffer1 = null;
         java.lang.StringBuilder stringBuilder2 = null;
         // The following exception was thrown during execution in test generation
@@ -1821,9 +1806,9 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0192() throws Throwable {
+    public void test00191() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0192");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00191");
         comp5111.assignment.cut.Subject subject0 = new comp5111.assignment.cut.Subject();
         comp5111.assignment.cut.Subject.GamePlayer gamePlayer2 = subject0.new GamePlayer("-2147483648-10-01");
         comp5111.assignment.cut.Subject.GamePlace gamePlace5 = subject0.new GamePlace(62, 1);
@@ -1850,17 +1835,17 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0193() throws Throwable {
+    public void test00192() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0193");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00192");
         java.lang.String str1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.roundSecondToString((long) (short) -1);
         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "-1 S" + "'", str1, "-1 S");
     }
 
     @Test
-    public void test0194() throws Throwable {
+    public void test00193() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0194");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00193");
         // The following exception was thrown during execution in test generation
         try {
             int int6 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.daysBetweenDates((int) (byte) 1, 4, 71, 1, 365, (int) 'a');
@@ -1871,25 +1856,25 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0195() throws Throwable {
+    public void test00194() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0195");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00194");
         java.lang.String str3 = comp5111.assignment.cut.Subject.StringAlgorithms.padRight("10th", (short) 0, 'a');
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "10th" + "'", str3, "10th");
     }
 
     @Test
-    public void test0196() throws Throwable {
+    public void test00195() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0196");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00195");
         boolean boolean2 = comp5111.assignment.cut.Subject.StringAlgorithms.startsWithIgnoreCase("0100-10-01", "(62, 1)");
         org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
     }
 
     @Test
-    public void test0197() throws Throwable {
+    public void test00196() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0197");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00196");
         char[] charArray7 = new char[] { 'a', ' ', 'a', ' ', 'a' };
         java.lang.String str8 = comp5111.assignment.cut.Subject.StringAlgorithms.parseToken("", charArray7);
         java.lang.String str9 = comp5111.assignment.cut.Subject.StringAlgorithms.parseToken("                                                                                          0100-01-01", charArray7);
@@ -1904,9 +1889,9 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0198() throws Throwable {
+    public void test00197() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0198");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00197");
         // The following exception was thrown during execution in test generation
         try {
             int int6 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.daysBetweenDates(1, 0, (int) (short) 0, (int) (byte) 1, (int) (byte) 100, 62);
@@ -1917,9 +1902,9 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0199() throws Throwable {
+    public void test00198() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0199");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00198");
         // The following exception was thrown during execution in test generation
         try {
             java.lang.Number number1 = comp5111.assignment.cut.Subject.StringAlgorithms.parseNumber("1st");
@@ -1930,34 +1915,34 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0200() throws Throwable {
+    public void test00199() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0200");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00199");
         int int2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.daysBetweenDateStrings("2 M", "-2147483648-10-01");
         org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-2147483648) + "'", int2 == (-2147483648));
     }
 
     @Test
-    public void test0201() throws Throwable {
+    public void test00200() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0201");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00200");
         int[] intArray1 = comp5111.assignment.cut.Subject.StringAlgorithms.getVersionNo("0100-10-01");
         org.junit.Assert.assertNotNull(intArray1);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray1), "[100, 0, 0, 0]");
     }
 
     @Test
-    public void test0202() throws Throwable {
+    public void test00201() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0202");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00201");
         int int2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.daysBetweenDateStrings("1st", "-1 S");
         org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-2147483648) + "'", int2 == (-2147483648));
     }
 
     @Test
-    public void test0203() throws Throwable {
+    public void test00202() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0203");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00202");
         byte[] byteArray4 = new byte[] { (byte) 10, (byte) -1, (byte) 100 };
         // The following exception was thrown during execution in test generation
         try {
@@ -1971,17 +1956,17 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0204() throws Throwable {
+    public void test00203() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0204");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00203");
         int int1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.monAbbr2month("32 S");
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + (-1) + "'", int1 == (-1));
     }
 
     @Test
-    public void test0205() throws Throwable {
+    public void test00204() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0205");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00204");
         // The following exception was thrown during execution in test generation
         try {
             int int6 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.daysBetweenDates((int) ' ', 62, (int) (short) 1, (int) (byte) 10, (-2147483648), (int) (short) 10);
@@ -1992,9 +1977,9 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0206() throws Throwable {
+    public void test00205() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0206");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00205");
         comp5111.assignment.cut.Subject subject0 = new comp5111.assignment.cut.Subject();
         comp5111.assignment.cut.Subject.GamePlayer gamePlayer2 = subject0.new GamePlayer("-2147483648-10-01");
         comp5111.assignment.cut.Subject.GamePlace gamePlace5 = subject0.new GamePlace(62, 1);
@@ -2005,45 +1990,33 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0207() throws Throwable {
+    public void test00206() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0207");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00206");
         int int4 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.monthsBetween(71, (int) (byte) -1, 4, 1);
         org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
     }
 
     @Test
-    public void test0208() throws Throwable {
+    public void test00207() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0208");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00207");
         java.lang.String str2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.lastDayOfMonth((int) '4', (int) ' ');
         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "(invalid)" + "'", str2, "(invalid)");
     }
 
     @Test
-    public void test0209() throws Throwable {
+    public void test00208() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0209");
-        comp5111.assignment.cut.Subject subject0 = new comp5111.assignment.cut.Subject();
-        comp5111.assignment.cut.Subject.GamePlayer gamePlayer2 = subject0.new GamePlayer("-2147483648-10-01");
-        comp5111.assignment.cut.Subject.GamePlace gamePlace5 = subject0.new GamePlace(62, 1);
-        gamePlace5.x((int) (short) 1);
-        gamePlace5.y((int) (short) -1);
-        gamePlace5.y(0);
-    }
-
-    @Test
-    public void test0210() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0210");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00208");
         java.lang.String str1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.roundSecondToString((long) (byte) 1);
         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "1 S" + "'", str1, "1 S");
     }
 
     @Test
-    public void test0211() throws Throwable {
+    public void test00209() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0211");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00209");
         java.nio.ByteBuffer byteBuffer1 = null;
         java.lang.StringBuilder stringBuilder2 = null;
         // The following exception was thrown during execution in test generation
@@ -2056,57 +2029,57 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0212() throws Throwable {
+    public void test00210() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0212");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00210");
         java.lang.Boolean boolean1 = comp5111.assignment.cut.Subject.StringAlgorithms.strToBoolean("(inva");
         org.junit.Assert.assertNull(boolean1);
     }
 
     @Test
-    public void test0213() throws Throwable {
+    public void test00211() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0213");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00211");
         java.lang.Boolean boolean4 = comp5111.assignment.cut.Subject.StringAlgorithms.strToBoolean("32 S", "32 S", "(1, 365)", "-1 S");
         org.junit.Assert.assertEquals("'" + boolean4 + "' != '" + true + "'", boolean4, true);
     }
 
     @Test
-    public void test0214() throws Throwable {
+    public void test00212() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0214");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00212");
         java.lang.String str2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.lastDayOfMonth((int) (short) 100, (int) (short) 10);
         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "0100-10-31" + "'", str2, "0100-10-31");
     }
 
     @Test
-    public void test0215() throws Throwable {
+    public void test00213() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0215");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00213");
         java.lang.String str3 = comp5111.assignment.cut.Subject.StringAlgorithms.padLeft("1st", (short) (byte) 10, '#');
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "#######1st" + "'", str3, "#######1st");
     }
 
     @Test
-    public void test0216() throws Throwable {
+    public void test00214() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0216");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00214");
         int int2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.calcDaysInMonth(10, 100);
         org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
     }
 
     @Test
-    public void test0217() throws Throwable {
+    public void test00215() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0217");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00215");
         java.lang.String str2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.firstDayOfMonth((int) (byte) 10, 356);
         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "(invalid)" + "'", str2, "(invalid)");
     }
 
     @Test
-    public void test0218() throws Throwable {
+    public void test00216() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0218");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00216");
         // The following exception was thrown during execution in test generation
         try {
             java.lang.Boolean boolean4 = comp5111.assignment.cut.Subject.StringAlgorithms.strToBoolean("", "(62, 1)", "#######1st", "aaaaaaaaaa");
@@ -2117,25 +2090,25 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0219() throws Throwable {
+    public void test00217() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0219");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00217");
         java.lang.String str1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.roundSecondToString((long) (short) 10);
         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "10 S" + "'", str1, "10 S");
     }
 
     @Test
-    public void test0220() throws Throwable {
+    public void test00218() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0220");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00218");
         int int2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.daysBetweenDateStrings("0000-01-01", "-214");
         org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-2147483648) + "'", int2 == (-2147483648));
     }
 
     @Test
-    public void test0221() throws Throwable {
+    public void test00219() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0221");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00219");
         // The following exception was thrown during execution in test generation
         try {
             int int6 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.daysBetweenDates(31, (int) (short) 100, (int) (short) 1, 1, 100, (int) (byte) 10);
@@ -2146,33 +2119,33 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0222() throws Throwable {
+    public void test00220() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0222");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00220");
         int int1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.getQuarter(100);
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + (-1) + "'", int1 == (-1));
     }
 
     @Test
-    public void test0223() throws Throwable {
+    public void test00221() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0223");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00221");
         java.util.List<java.lang.String> strList6 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.listDatesBetween((int) (short) -1, 365, (int) (short) 0, 31, (int) (byte) -1, 365);
         org.junit.Assert.assertNotNull(strList6);
     }
 
     @Test
-    public void test0224() throws Throwable {
+    public void test00222() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0224");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00222");
         java.lang.Boolean boolean1 = comp5111.assignment.cut.Subject.StringAlgorithms.strToBoolean("0100-01-01");
         org.junit.Assert.assertNull(boolean1);
     }
 
     @Test
-    public void test0225() throws Throwable {
+    public void test00223() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0225");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00223");
         // The following exception was thrown during execution in test generation
         try {
             int int6 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.daysBetweenDates(0, 356, (int) ' ', (int) 'a', (int) (short) 1, 4);
@@ -2183,9 +2156,9 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0226() throws Throwable {
+    public void test00224() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0226");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00224");
         // The following exception was thrown during execution in test generation
         try {
             java.lang.Boolean boolean4 = comp5111.assignment.cut.Subject.StringAlgorithms.strToBoolean("(62, 1)", "#######1st", "-1 S", "2 ");
@@ -2196,57 +2169,57 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0227() throws Throwable {
+    public void test00225() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0227");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00225");
         java.lang.String str1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.dayStr((int) ' ');
         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "(invalid)" + "'", str1, "(invalid)");
     }
 
     @Test
-    public void test0228() throws Throwable {
+    public void test00226() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0228");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00226");
         boolean boolean1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.judgeLeapYear((int) (byte) 0);
         org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + true + "'", boolean1 == true);
     }
 
     @Test
-    public void test0229() throws Throwable {
+    public void test00227() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0229");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00227");
         int int2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.calcDaysInMonth(97, 71);
         org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
     }
 
     @Test
-    public void test0230() throws Throwable {
+    public void test00228() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0230");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00228");
         int int1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.monAbbr2month("0035-10-31");
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + (-1) + "'", int1 == (-1));
     }
 
     @Test
-    public void test0231() throws Throwable {
+    public void test00229() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0231");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00229");
         java.lang.String str1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.dayStr(366);
         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "(invalid)" + "'", str1, "(invalid)");
     }
 
     @Test
-    public void test0232() throws Throwable {
+    public void test00230() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0232");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00230");
         java.lang.String str2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.firstDayOfMonth((int) ' ', (int) (short) 1);
         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "0032-01-01" + "'", str2, "0032-01-01");
     }
 
     @Test
-    public void test0233() throws Throwable {
+    public void test00231() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0233");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00231");
         // The following exception was thrown during execution in test generation
         try {
             int int6 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.daysBetweenDates((int) (byte) 1, 4, 0, (int) (byte) 1, (int) (byte) 1, (int) '#');
@@ -2257,25 +2230,25 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0234() throws Throwable {
+    public void test00232() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0234");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00232");
         boolean boolean2 = comp5111.assignment.cut.Subject.StringAlgorithms.startsWithIgnoreCase("aaaaaaaaaa", "-214");
         org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
     }
 
     @Test
-    public void test0235() throws Throwable {
+    public void test00233() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0235");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00233");
         java.lang.String str3 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.formatFullDate((int) (byte) 100, 0, (int) (byte) 100);
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "(invalid)" + "'", str3, "(invalid)");
     }
 
     @Test
-    public void test0236() throws Throwable {
+    public void test00234() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0236");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00234");
         comp5111.assignment.cut.Subject subject0 = new comp5111.assignment.cut.Subject();
         comp5111.assignment.cut.Subject.GamePlayer gamePlayer1 = subject0.new GamePlayer();
         gamePlayer1.addScore(100);
@@ -2285,81 +2258,81 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0237() throws Throwable {
+    public void test00235() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0237");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00235");
         java.lang.String str3 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.formatFullDate((-2147483648), 365, 1);
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "(invalid)" + "'", str3, "(invalid)");
     }
 
     @Test
-    public void test0238() throws Throwable {
+    public void test00236() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0238");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00236");
         int int1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.daysInYear(1);
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + 365 + "'", int1 == 365);
     }
 
     @Test
-    public void test0239() throws Throwable {
+    public void test00237() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0239");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00237");
         java.lang.String str1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.dayStr(356);
         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "(invalid)" + "'", str1, "(invalid)");
     }
 
     @Test
-    public void test0240() throws Throwable {
+    public void test00238() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0240");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00238");
         java.lang.String str3 = comp5111.assignment.cut.Subject.StringAlgorithms.padRight("                                                                                          0100-01-01", (short) 0, ' ');
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "                                                                                          0100-01-01" + "'", str3, "                                                                                          0100-01-01");
     }
 
     @Test
-    public void test0241() throws Throwable {
+    public void test00239() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0241");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00239");
         int int2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.daysBetweenDateStrings("1st", "10 S");
         org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-2147483648) + "'", int2 == (-2147483648));
     }
 
     @Test
-    public void test0242() throws Throwable {
+    public void test00240() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0242");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00240");
         java.lang.String str3 = comp5111.assignment.cut.Subject.StringAlgorithms.padRight("", (short) -1, '4');
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "" + "'", str3, "");
     }
 
     @Test
-    public void test0243() throws Throwable {
+    public void test00241() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0243");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00241");
         java.lang.Boolean boolean1 = comp5111.assignment.cut.Subject.StringAlgorithms.strToBoolean("#######1st");
         org.junit.Assert.assertNull(boolean1);
     }
 
     @Test
-    public void test0244() throws Throwable {
+    public void test00242() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0244");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00242");
         java.lang.String str2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.firstDayOfMonth(10, (int) '#');
         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "(invalid)" + "'", str2, "(invalid)");
     }
 
     @Test
-    public void test0245() throws Throwable {
+    public void test00243() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0245");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00243");
         java.lang.String str2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.lastDayOfMonth((int) (short) 1, 1);
         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "0001-01-31" + "'", str2, "0001-01-31");
     }
 
     @Test
-    public void test0246() throws Throwable {
+    public void test00244() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0246");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00244");
         // The following exception was thrown during execution in test generation
         try {
             java.lang.Number number1 = comp5111.assignment.cut.Subject.StringAlgorithms.parseNumber("                                                                                          0100-01-01");
@@ -2370,92 +2343,81 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0247() throws Throwable {
+    public void test00245() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0247");
-        comp5111.assignment.cut.Subject subject0 = new comp5111.assignment.cut.Subject();
-        comp5111.assignment.cut.Subject.GamePlace gamePlace3 = subject0.new GamePlace((int) (short) 10, (int) (short) 10);
-        gamePlace3.x((int) 'a');
-        gamePlace3.x((int) '#');
-        gamePlace3.x(4);
-    }
-
-    @Test
-    public void test0248() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0248");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00245");
         int int4 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.monthsBetween(1, (int) (short) -1, (int) (short) 100, 356);
         org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
     }
 
     @Test
-    public void test0249() throws Throwable {
+    public void test00246() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0249");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00246");
         int int4 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.monthsBetween(62, 31, (int) (short) 0, (int) (byte) 100);
         org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
     }
 
     @Test
-    public void test0250() throws Throwable {
+    public void test00247() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0250");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00247");
         int int2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.daysBetweenDateStrings("", "(71, 366)");
         org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-2147483648) + "'", int2 == (-2147483648));
     }
 
     @Test
-    public void test0251() throws Throwable {
+    public void test00248() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0251");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00248");
         int int2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.daysBetweenDateStrings("", "#######1st");
         org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-2147483648) + "'", int2 == (-2147483648));
     }
 
     @Test
-    public void test0252() throws Throwable {
+    public void test00249() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0252");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00249");
         java.lang.String str3 = comp5111.assignment.cut.Subject.StringAlgorithms.padLeft("", (short) 0, 'a');
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "" + "'", str3, "");
     }
 
     @Test
-    public void test0253() throws Throwable {
+    public void test00250() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0253");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00250");
         java.lang.String str2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.lastDayOfMonth((-1), 365);
         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "(invalid)" + "'", str2, "(invalid)");
     }
 
     @Test
-    public void test0254() throws Throwable {
+    public void test00251() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0254");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00251");
         boolean boolean1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.judgeLeapYear((int) (byte) 100);
         org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
     }
 
     @Test
-    public void test0255() throws Throwable {
+    public void test00252() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0255");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00252");
         java.lang.String str3 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.formatFullDate(71, 4, 71);
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "(invalid)" + "'", str3, "(invalid)");
     }
 
     @Test
-    public void test0256() throws Throwable {
+    public void test00253() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0256");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00253");
         int int1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.daysInYear(62);
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + 365 + "'", int1 == 365);
     }
 
     @Test
-    public void test0257() throws Throwable {
+    public void test00254() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0257");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00254");
         byte[] byteArray2 = new byte[] {};
         comp5111.assignment.cut.Subject.StringAlgorithms.enlarge((int) (byte) 1, byteArray2, 0);
         // The following exception was thrown during execution in test generation
@@ -2470,105 +2432,105 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0258() throws Throwable {
+    public void test00255() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0258");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00255");
         java.lang.String str3 = comp5111.assignment.cut.Subject.StringAlgorithms.padLeft("10 S", (short) 0, '4');
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "10 S" + "'", str3, "10 S");
     }
 
     @Test
-    public void test0259() throws Throwable {
+    public void test00256() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0259");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00256");
         int int1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.daysInYear((-1));
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + 365 + "'", int1 == 365);
     }
 
     @Test
-    public void test0260() throws Throwable {
+    public void test00257() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0260");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00257");
         int int4 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.monthsBetween(4, 0, (int) (short) 100, 0);
         org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
     }
 
     @Test
-    public void test0261() throws Throwable {
+    public void test00258() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0261");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00258");
         boolean boolean2 = comp5111.assignment.cut.Subject.StringAlgorithms.startsWithIgnoreCase("(62, 1)", "0100-01-31");
         org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
     }
 
     @Test
-    public void test0262() throws Throwable {
+    public void test00259() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0262");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00259");
         boolean boolean1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.judgeLeapYear((int) (byte) 1);
         org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
     }
 
     @Test
-    public void test0263() throws Throwable {
+    public void test00260() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0263");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00260");
         java.lang.String str2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.lastDayOfMonth(97, (int) (byte) -1);
         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "(invalid)" + "'", str2, "(invalid)");
     }
 
     @Test
-    public void test0264() throws Throwable {
+    public void test00261() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0264");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00261");
         int int1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.monAbbr2month("                                                                                          0100-01-01");
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + (-1) + "'", int1 == (-1));
     }
 
     @Test
-    public void test0265() throws Throwable {
+    public void test00262() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0265");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00262");
         int int2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.daysBetweenDateStrings("(10, 10)", "(35, 10)");
         org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-2147483648) + "'", int2 == (-2147483648));
     }
 
     @Test
-    public void test0266() throws Throwable {
+    public void test00263() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0266");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00263");
         int int4 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.monthsBetween(1, 89, (int) 'a', 10);
         org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
     }
 
     @Test
-    public void test0267() throws Throwable {
+    public void test00264() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0267");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00264");
         java.lang.String str3 = comp5111.assignment.cut.Subject.StringAlgorithms.padLeft("2 ", (short) 10, ' ');
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "        2 " + "'", str3, "        2 ");
     }
 
     @Test
-    public void test0268() throws Throwable {
+    public void test00265() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0268");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00265");
         java.lang.String str3 = comp5111.assignment.cut.Subject.StringAlgorithms.padRight("(71, ", (short) -1, '4');
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "(71, " + "'", str3, "(71, ");
     }
 
     @Test
-    public void test0269() throws Throwable {
+    public void test00266() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0269");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00266");
         int int1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.daysInYear(366);
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + 365 + "'", int1 == 365);
     }
 
     @Test
-    public void test0270() throws Throwable {
+    public void test00267() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0270");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00267");
         // The following exception was thrown during execution in test generation
         try {
             java.lang.Number number1 = comp5111.assignment.cut.Subject.StringAlgorithms.parseNumber("2 ");
@@ -2579,17 +2541,17 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0271() throws Throwable {
+    public void test00268() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0271");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00268");
         java.lang.String str3 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.formatFullDate((int) 'a', (-2147483648), (int) (short) 0);
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "(invalid)" + "'", str3, "(invalid)");
     }
 
     @Test
-    public void test0272() throws Throwable {
+    public void test00269() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0272");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00269");
         // The following exception was thrown during execution in test generation
         try {
             java.lang.Number number1 = comp5111.assignment.cut.Subject.StringAlgorithms.parseNumber("        2 ");
@@ -2600,17 +2562,17 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0273() throws Throwable {
+    public void test00270() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0273");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00270");
         int int1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.daysInYear(31);
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + 365 + "'", int1 == 365);
     }
 
     @Test
-    public void test0274() throws Throwable {
+    public void test00271() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0274");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00271");
         comp5111.assignment.cut.Subject subject0 = new comp5111.assignment.cut.Subject();
         comp5111.assignment.cut.Subject.GamePlace gamePlace3 = subject0.new GamePlace((int) (short) 10, (int) (short) 10);
         java.lang.Class<?> wildcardClass4 = gamePlace3.getClass();
@@ -2618,57 +2580,25 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0275() throws Throwable {
+    public void test00272() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0275");
-        comp5111.assignment.cut.Subject subject0 = new comp5111.assignment.cut.Subject();
-        comp5111.assignment.cut.Subject.GamePlayer gamePlayer2 = subject0.new GamePlayer("-2147483648-10-01");
-        comp5111.assignment.cut.Subject.GamePlace gamePlace5 = subject0.new GamePlace(62, 1);
-        comp5111.assignment.cut.Subject.GamePlace gamePlace8 = subject0.new GamePlace(0, 0);
-        char[] charArray19 = new char[] { 'a', '4', '#', '4', '#', ' ' };
-        java.lang.String str20 = comp5111.assignment.cut.Subject.StringAlgorithms.parseToken("1st", charArray19);
-        java.lang.String str21 = comp5111.assignment.cut.Subject.StringAlgorithms.parseToken("(invalid)", charArray19);
-        java.lang.String str22 = comp5111.assignment.cut.Subject.StringAlgorithms.parseToken("hi!", charArray19);
-        java.lang.String str23 = comp5111.assignment.cut.Subject.StringAlgorithms.parseToken("0100-10-01", charArray19);
-        java.lang.Class<?> wildcardClass24 = charArray19.getClass();
-        boolean boolean25 = gamePlace8.equals((java.lang.Object) wildcardClass24);
-        gamePlace8.y((int) 'a');
-        comp5111.assignment.cut.Subject.GamePlace gamePlace28 = gamePlace8.clone();
-        comp5111.assignment.cut.Subject.GamePlace gamePlace29 = gamePlace8.clone();
-        org.junit.Assert.assertNotNull(charArray19);
-        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray19), "a4#4# ");
-        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray19), "a4#4# ");
-        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray19), "[a, 4, #, 4, #,  ]");
-        org.junit.Assert.assertEquals("'" + str20 + "' != '" + "1st" + "'", str20, "1st");
-        org.junit.Assert.assertEquals("'" + str21 + "' != '" + "(inva" + "'", str21, "(inva");
-        org.junit.Assert.assertEquals("'" + str22 + "' != '" + "hi!" + "'", str22, "hi!");
-        org.junit.Assert.assertEquals("'" + str23 + "' != '" + "0100-10-01" + "'", str23, "0100-10-01");
-        org.junit.Assert.assertNotNull(wildcardClass24);
-        org.junit.Assert.assertTrue("'" + boolean25 + "' != '" + false + "'", boolean25 == false);
-        org.junit.Assert.assertNotNull(gamePlace28);
-        org.junit.Assert.assertNotNull(gamePlace29);
-    }
-
-    @Test
-    public void test0276() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0276");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00272");
         java.lang.String str1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.month2MonAbbr(1);
         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Jan" + "'", str1, "Jan");
     }
 
     @Test
-    public void test0277() throws Throwable {
+    public void test00273() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0277");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00273");
         java.lang.String str2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.firstDayOfMonth(365, 366);
         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "(invalid)" + "'", str2, "(invalid)");
     }
 
     @Test
-    public void test0278() throws Throwable {
+    public void test00274() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0278");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00274");
         int[] intArray1 = comp5111.assignment.cut.Subject.StringAlgorithms.getVersionNo(" ");
         java.lang.Class<?> wildcardClass2 = intArray1.getClass();
         org.junit.Assert.assertNotNull(intArray1);
@@ -2677,33 +2607,33 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0279() throws Throwable {
+    public void test00275() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0279");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00275");
         java.lang.String str2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.lastDayOfMonth((int) '#', 365);
         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "(invalid)" + "'", str2, "(invalid)");
     }
 
     @Test
-    public void test0280() throws Throwable {
+    public void test00276() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0280");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00276");
         java.lang.String str3 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.formatFullDate((int) (short) 100, 89, (-1));
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "(invalid)" + "'", str3, "(invalid)");
     }
 
     @Test
-    public void test0281() throws Throwable {
+    public void test00277() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0281");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00277");
         java.lang.String str3 = comp5111.assignment.cut.Subject.StringAlgorithms.padRight("(71, ", (short) (byte) 10, '#');
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "(71, #####" + "'", str3, "(71, #####");
     }
 
     @Test
-    public void test0282() throws Throwable {
+    public void test00278() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0282");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00278");
         java.nio.ByteBuffer byteBuffer1 = null;
         java.lang.StringBuilder stringBuilder2 = null;
         // The following exception was thrown during execution in test generation
@@ -2716,58 +2646,58 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0283() throws Throwable {
+    public void test00279() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0283");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00279");
         boolean boolean1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.judgeLeapYear(366);
         org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
     }
 
     @Test
-    public void test0284() throws Throwable {
+    public void test00280() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0284");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00280");
         java.lang.String str3 = comp5111.assignment.cut.Subject.StringAlgorithms.padLeft("0035-10-31", (short) 1, '#');
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "0035-10-31" + "'", str3, "0035-10-31");
     }
 
     @Test
-    public void test0285() throws Throwable {
+    public void test00281() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0285");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00281");
         java.lang.String str3 = comp5111.assignment.cut.Subject.StringAlgorithms.padLeft("10th", (short) 100, 'a');
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa10th" + "'", str3, "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa10th");
     }
 
     @Test
-    public void test0286() throws Throwable {
+    public void test00282() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0286");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00282");
         java.util.List<java.lang.String> strList6 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.listDatesBetween((int) (byte) -1, 100, (int) '#', 71, (int) (byte) 0, 356);
         org.junit.Assert.assertNotNull(strList6);
     }
 
     @Test
-    public void test0287() throws Throwable {
+    public void test00283() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0287");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00283");
         int int1 = comp5111.assignment.cut.Subject.StringAlgorithms.extractIntInStr("-2147483648-10-01");
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + 0 + "'", int1 == 0);
     }
 
     @Test
-    public void test0288() throws Throwable {
+    public void test00284() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0288");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00284");
         int[] intArray1 = comp5111.assignment.cut.Subject.StringAlgorithms.getVersionNo("(71, #####");
         org.junit.Assert.assertNotNull(intArray1);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray1), "[0, 0, 0, 0]");
     }
 
     @Test
-    public void test0289() throws Throwable {
+    public void test00285() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0289");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00285");
         // The following exception was thrown during execution in test generation
         try {
             java.lang.Number number1 = comp5111.assignment.cut.Subject.StringAlgorithms.parseNumber("-1 S");
@@ -2778,170 +2708,170 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0290() throws Throwable {
+    public void test00286() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0290");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00286");
         java.lang.String str1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.month2MonAbbr((int) (byte) 10);
         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Oct" + "'", str1, "Oct");
     }
 
     @Test
-    public void test0291() throws Throwable {
+    public void test00287() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0291");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00287");
         int[] intArray1 = comp5111.assignment.cut.Subject.StringAlgorithms.getVersionNo("0032-01-01");
         org.junit.Assert.assertNotNull(intArray1);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray1), "[32, 0, 0, 0]");
     }
 
     @Test
-    public void test0292() throws Throwable {
+    public void test00288() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0292");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00288");
         java.lang.String str3 = comp5111.assignment.cut.Subject.StringAlgorithms.padRight("", (short) 1, '4');
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "4" + "'", str3, "4");
     }
 
     @Test
-    public void test0293() throws Throwable {
+    public void test00289() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0293");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00289");
         java.lang.String str3 = comp5111.assignment.cut.Subject.StringAlgorithms.padRight("(10, 10)", (short) (byte) -1, ' ');
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "(10, 10)" + "'", str3, "(10, 10)");
     }
 
     @Test
-    public void test0294() throws Throwable {
+    public void test00290() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0294");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00290");
         java.util.List<java.lang.String> strList6 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.listDatesBetween((int) (byte) -1, 62, (int) (short) 1, 52, (int) '4', (int) (byte) 1);
         org.junit.Assert.assertNotNull(strList6);
     }
 
     @Test
-    public void test0295() throws Throwable {
+    public void test00291() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0295");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00291");
         int int1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.daysInYear((int) 'a');
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + 365 + "'", int1 == 365);
     }
 
     @Test
-    public void test0296() throws Throwable {
+    public void test00292() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0296");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00292");
         java.lang.String str2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.firstDayOfMonth(10, (int) (short) -1);
         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "(invalid)" + "'", str2, "(invalid)");
     }
 
     @Test
-    public void test0297() throws Throwable {
+    public void test00293() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0297");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00293");
         java.lang.String str2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.lastDayOfMonth((-2147483648), (int) (byte) -1);
         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "(invalid)" + "'", str2, "(invalid)");
     }
 
     @Test
-    public void test0298() throws Throwable {
+    public void test00294() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0298");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00294");
         java.lang.String str3 = comp5111.assignment.cut.Subject.StringAlgorithms.padLeft("0032-01-01", (short) (byte) 100, '#');
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "##########################################################################################0032-01-01" + "'", str3, "##########################################################################################0032-01-01");
     }
 
     @Test
-    public void test0299() throws Throwable {
+    public void test00295() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0299");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00295");
         int int1 = comp5111.assignment.cut.Subject.StringAlgorithms.extractIntInStr("(71, ");
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + 0 + "'", int1 == 0);
     }
 
     @Test
-    public void test0300() throws Throwable {
+    public void test00296() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0300");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00296");
         int int2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.daysBetweenDateStrings("hi!", "4");
         org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-2147483648) + "'", int2 == (-2147483648));
     }
 
     @Test
-    public void test0301() throws Throwable {
+    public void test00297() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0301");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00297");
         int int1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.monAbbr2month("(35, 10)");
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + (-1) + "'", int1 == (-1));
     }
 
     @Test
-    public void test0302() throws Throwable {
+    public void test00298() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0302");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00298");
         int int1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.daysInYear((int) ' ');
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + 366 + "'", int1 == 366);
     }
 
     @Test
-    public void test0303() throws Throwable {
+    public void test00299() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0303");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00299");
         java.util.List<java.lang.String> strList6 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.listDatesBetween(10, 0, (int) (byte) 100, (int) (short) 1, 365, (int) (short) 1);
         org.junit.Assert.assertNotNull(strList6);
     }
 
     @Test
-    public void test0304() throws Throwable {
+    public void test00300() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0304");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00300");
         boolean boolean2 = comp5111.assignment.cut.Subject.StringAlgorithms.startsWithIgnoreCase("0035-10-31", "(inva");
         org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
     }
 
     @Test
-    public void test0305() throws Throwable {
+    public void test00301() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0305");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00301");
         boolean boolean2 = comp5111.assignment.cut.Subject.StringAlgorithms.startsWithIgnoreCase("aaaaaaaaaa", "10th");
         org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
     }
 
     @Test
-    public void test0306() throws Throwable {
+    public void test00302() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0306");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00302");
         int int2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.calcDaysInMonth((int) (byte) 100, 97);
         org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
     }
 
     @Test
-    public void test0307() throws Throwable {
+    public void test00303() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0307");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00303");
         java.lang.String str3 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.formatFullDate((int) '4', 25, (-2147483648));
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "(invalid)" + "'", str3, "(invalid)");
     }
 
     @Test
-    public void test0308() throws Throwable {
+    public void test00304() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0308");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00304");
         boolean boolean2 = comp5111.assignment.cut.Subject.StringAlgorithms.startsWithIgnoreCase("1st", "        2 ");
         org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
     }
 
     @Test
-    public void test0309() throws Throwable {
+    public void test00305() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0309");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00305");
         java.lang.String str1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.month2MonAbbr((int) (short) 10);
         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Oct" + "'", str1, "Oct");
     }
 
     @Test
-    public void test0310() throws Throwable {
+    public void test00306() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0310");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00306");
         comp5111.assignment.cut.Subject subject0 = new comp5111.assignment.cut.Subject();
         comp5111.assignment.cut.Subject.GamePlayer gamePlayer2 = subject0.new GamePlayer("-2147483648-10-01");
         comp5111.assignment.cut.Subject.GamePlace gamePlace5 = subject0.new GamePlace(62, 1);
@@ -2960,25 +2890,25 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0311() throws Throwable {
+    public void test00307() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0311");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00307");
         java.lang.String str3 = comp5111.assignment.cut.Subject.StringAlgorithms.padLeft("#######1st", (short) 100, 'a');
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa#######1st" + "'", str3, "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa#######1st");
     }
 
     @Test
-    public void test0312() throws Throwable {
+    public void test00308() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0312");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00308");
         java.lang.String str1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.dayStr(0);
         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "(invalid)" + "'", str1, "(invalid)");
     }
 
     @Test
-    public void test0313() throws Throwable {
+    public void test00309() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0313");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00309");
         comp5111.assignment.cut.Subject subject0 = new comp5111.assignment.cut.Subject();
         comp5111.assignment.cut.Subject.GamePlayer gamePlayer1 = subject0.new GamePlayer();
         // The following exception was thrown during execution in test generation
@@ -2991,9 +2921,9 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0314() throws Throwable {
+    public void test00310() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0314");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00310");
         // The following exception was thrown during execution in test generation
         try {
             java.lang.Number number1 = comp5111.assignment.cut.Subject.StringAlgorithms.parseNumber("(100, 1)");
@@ -3004,74 +2934,74 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0315() throws Throwable {
+    public void test00311() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0315");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00311");
         java.lang.String str3 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.formatFullDate((int) (short) 10, 31, 1);
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "(invalid)" + "'", str3, "(invalid)");
     }
 
     @Test
-    public void test0316() throws Throwable {
+    public void test00312() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0316");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00312");
         int int2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.calcDaysInMonth((int) (short) 100, 62);
         org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
     }
 
     @Test
-    public void test0317() throws Throwable {
+    public void test00313() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0317");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00313");
         java.lang.Boolean boolean1 = comp5111.assignment.cut.Subject.StringAlgorithms.strToBoolean("(71, 366)");
         org.junit.Assert.assertNull(boolean1);
     }
 
     @Test
-    public void test0318() throws Throwable {
+    public void test00314() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0318");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00314");
         java.lang.String str2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.firstDayOfMonth(25, 89);
         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "(invalid)" + "'", str2, "(invalid)");
     }
 
     @Test
-    public void test0319() throws Throwable {
+    public void test00315() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0319");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00315");
         boolean boolean1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.judgeLeapYear((int) 'a');
         org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
     }
 
     @Test
-    public void test0320() throws Throwable {
+    public void test00316() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0320");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00316");
         int int1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.getQuarter(62);
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + (-1) + "'", int1 == (-1));
     }
 
     @Test
-    public void test0321() throws Throwable {
+    public void test00317() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0321");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00317");
         boolean boolean1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.judgeLeapYear(4);
         org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + true + "'", boolean1 == true);
     }
 
     @Test
-    public void test0322() throws Throwable {
+    public void test00318() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0322");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00318");
         int[] intArray1 = comp5111.assignment.cut.Subject.StringAlgorithms.getVersionNo("(100, 1)");
         org.junit.Assert.assertNotNull(intArray1);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray1), "[0, 0, 0, 0]");
     }
 
     @Test
-    public void test0323() throws Throwable {
+    public void test00319() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0323");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00319");
         byte[] byteArray8 = new byte[] { (byte) 0, (byte) 100, (byte) 10, (byte) 0, (byte) 100, (byte) 1 };
         comp5111.assignment.cut.Subject.StringAlgorithms.enlarge((int) (byte) 0, byteArray8, 1);
         // The following exception was thrown during execution in test generation
@@ -3086,9 +3016,9 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0324() throws Throwable {
+    public void test00320() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0324");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00320");
         byte[] byteArray3 = new byte[] {};
         comp5111.assignment.cut.Subject.StringAlgorithms.enlarge((int) (byte) 1, byteArray3, 0);
         comp5111.assignment.cut.Subject.StringAlgorithms.enlarge(100, byteArray3, 0);
@@ -3104,17 +3034,17 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0325() throws Throwable {
+    public void test00321() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0325");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00321");
         boolean boolean1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.judgeLeapYear(10);
         org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
     }
 
     @Test
-    public void test0326() throws Throwable {
+    public void test00322() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0326");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00322");
         comp5111.assignment.cut.Subject subject0 = new comp5111.assignment.cut.Subject();
         comp5111.assignment.cut.Subject.GamePlayer gamePlayer2 = subject0.new GamePlayer("-2147483648-10-01");
         comp5111.assignment.cut.Subject.GamePlace gamePlace5 = subject0.new GamePlace(62, 1);
@@ -3134,17 +3064,17 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0327() throws Throwable {
+    public void test00323() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0327");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00323");
         java.lang.String str1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.month2MonAbbr(25);
         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "(invalid)" + "'", str1, "(invalid)");
     }
 
     @Test
-    public void test0328() throws Throwable {
+    public void test00324() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0328");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00324");
         java.nio.ByteBuffer byteBuffer1 = null;
         java.lang.StringBuilder stringBuilder2 = null;
         // The following exception was thrown during execution in test generation
@@ -3157,17 +3087,17 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0329() throws Throwable {
+    public void test00325() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0329");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00325");
         java.lang.String str1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.roundSecondToString((long) 4);
         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "4 S" + "'", str1, "4 S");
     }
 
     @Test
-    public void test0330() throws Throwable {
+    public void test00326() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0330");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00326");
         // The following exception was thrown during execution in test generation
         try {
             int int6 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.daysBetweenDates((int) (short) -1, 97, (int) (byte) 10, (int) '#', (int) (short) 10, 4);
@@ -3178,9 +3108,9 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0331() throws Throwable {
+    public void test00327() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0331");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00327");
         java.nio.ByteBuffer byteBuffer1 = null;
         java.lang.StringBuilder stringBuilder2 = null;
         // The following exception was thrown during execution in test generation
@@ -3193,41 +3123,41 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0332() throws Throwable {
+    public void test00328() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0332");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00328");
         java.lang.String str2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.lastDayOfMonth(31, 31);
         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "(invalid)" + "'", str2, "(invalid)");
     }
 
     @Test
-    public void test0333() throws Throwable {
+    public void test00329() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0333");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00329");
         int int1 = comp5111.assignment.cut.Subject.StringAlgorithms.extractIntInStr("0032-01-01");
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + 32 + "'", int1 == 32);
     }
 
     @Test
-    public void test0334() throws Throwable {
+    public void test00330() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0334");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00330");
         int int1 = comp5111.assignment.cut.Subject.StringAlgorithms.extractIntInStr("32 S");
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + 32 + "'", int1 == 32);
     }
 
     @Test
-    public void test0335() throws Throwable {
+    public void test00331() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0335");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00331");
         java.lang.String str2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.firstDayOfMonth((int) (short) 0, 71);
         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "(invalid)" + "'", str2, "(invalid)");
     }
 
     @Test
-    public void test0336() throws Throwable {
+    public void test00332() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0336");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00332");
         // The following exception was thrown during execution in test generation
         try {
             int int6 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.daysBetweenDates((int) (short) 1, 356, (int) (short) -1, 25, 35, 25);
@@ -3238,33 +3168,33 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0337() throws Throwable {
+    public void test00333() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0337");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00333");
         java.lang.String str2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.firstDayOfMonth((int) (short) 0, (int) 'a');
         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "(invalid)" + "'", str2, "(invalid)");
     }
 
     @Test
-    public void test0338() throws Throwable {
+    public void test00334() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0338");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00334");
         int int1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.daysInYear(52);
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + 366 + "'", int1 == 366);
     }
 
     @Test
-    public void test0339() throws Throwable {
+    public void test00335() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0339");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00335");
         int int2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.daysBetweenDateStrings("(62, ", "(71, ");
         org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-2147483648) + "'", int2 == (-2147483648));
     }
 
     @Test
-    public void test0340() throws Throwable {
+    public void test00336() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0340");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00336");
         java.nio.ByteBuffer byteBuffer1 = null;
         java.lang.StringBuilder stringBuilder2 = null;
         // The following exception was thrown during execution in test generation
@@ -3277,9 +3207,9 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0341() throws Throwable {
+    public void test00337() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0341");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00337");
         // The following exception was thrown during execution in test generation
         try {
             java.lang.Number number1 = comp5111.assignment.cut.Subject.StringAlgorithms.parseNumber("(71, 366)");
@@ -3290,98 +3220,98 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0342() throws Throwable {
+    public void test00338() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0342");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00338");
         boolean boolean1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.judgeLeapYear(0);
         org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + true + "'", boolean1 == true);
     }
 
     @Test
-    public void test0343() throws Throwable {
+    public void test00339() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0343");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00339");
         java.lang.String str1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.month2MonAbbr(97);
         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "(invalid)" + "'", str1, "(invalid)");
     }
 
     @Test
-    public void test0344() throws Throwable {
+    public void test00340() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0344");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00340");
         java.util.List<java.lang.String> strList6 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.listDatesBetween((int) (short) -1, (int) (byte) -1, (int) (byte) 0, (int) (short) -1, 366, 0);
         org.junit.Assert.assertNotNull(strList6);
     }
 
     @Test
-    public void test0345() throws Throwable {
+    public void test00341() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0345");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00341");
         java.util.List<java.lang.String> strList6 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.listDatesBetween((int) (short) 1, 356, 71, (int) (short) 0, 10, (int) 'a');
         org.junit.Assert.assertNotNull(strList6);
     }
 
     @Test
-    public void test0346() throws Throwable {
+    public void test00342() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0346");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00342");
         java.util.List<java.lang.String> strList6 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.listDatesBetween((int) (short) -1, 10, 97, 10, (int) 'a', (int) '#');
         org.junit.Assert.assertNotNull(strList6);
     }
 
     @Test
-    public void test0347() throws Throwable {
+    public void test00343() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0347");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00343");
         java.lang.String str3 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.formatFullDate(366, 32, 32);
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "(invalid)" + "'", str3, "(invalid)");
     }
 
     @Test
-    public void test0348() throws Throwable {
+    public void test00344() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0348");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00344");
         java.lang.String str3 = comp5111.assignment.cut.Subject.StringAlgorithms.padLeft("10 S", (short) 10, '4');
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "44444410 S" + "'", str3, "44444410 S");
     }
 
     @Test
-    public void test0349() throws Throwable {
+    public void test00345() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0349");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00345");
         java.lang.String str1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.month2MonAbbr((-1));
         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "(invalid)" + "'", str1, "(invalid)");
     }
 
     @Test
-    public void test0350() throws Throwable {
+    public void test00346() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0350");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00346");
         int[] intArray1 = comp5111.assignment.cut.Subject.StringAlgorithms.getVersionNo("(1, ");
         org.junit.Assert.assertNotNull(intArray1);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray1), "[0, 0, 0, 0]");
     }
 
     @Test
-    public void test0351() throws Throwable {
+    public void test00347() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0351");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00347");
         int int4 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.monthsBetween(0, (-1), (int) (short) 10, (-1));
         org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
     }
 
     @Test
-    public void test0352() throws Throwable {
+    public void test00348() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0352");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00348");
         java.lang.Boolean boolean1 = comp5111.assignment.cut.Subject.StringAlgorithms.strToBoolean("0001-01-31");
         org.junit.Assert.assertNull(boolean1);
     }
 
     @Test
-    public void test0353() throws Throwable {
+    public void test00349() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0353");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00349");
         java.nio.ByteBuffer byteBuffer1 = null;
         java.lang.StringBuilder stringBuilder2 = null;
         // The following exception was thrown during execution in test generation
@@ -3394,44 +3324,25 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0354() throws Throwable {
+    public void test00350() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0354");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00350");
         boolean boolean1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.judgeLeapYear(71);
         org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
     }
 
     @Test
-    public void test0355() throws Throwable {
+    public void test00351() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0355");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00351");
         java.lang.String str1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.dayStr(25);
         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "25th" + "'", str1, "25th");
     }
 
     @Test
-    public void test0356() throws Throwable {
+    public void test00352() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0356");
-        char[] charArray10 = new char[] { 'a', '4', '#', '4', '#', ' ' };
-        java.lang.String str11 = comp5111.assignment.cut.Subject.StringAlgorithms.parseToken("1st", charArray10);
-        java.lang.String str12 = comp5111.assignment.cut.Subject.StringAlgorithms.parseToken("(invalid)", charArray10);
-        java.lang.String str13 = comp5111.assignment.cut.Subject.StringAlgorithms.parseToken("(62, 1)", charArray10);
-        java.lang.String str14 = comp5111.assignment.cut.Subject.StringAlgorithms.parseToken("(35, 10)", charArray10);
-        org.junit.Assert.assertNotNull(charArray10);
-        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray10), "a4#4# ");
-        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray10), "a4#4# ");
-        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray10), "[a, 4, #, 4, #,  ]");
-        org.junit.Assert.assertEquals("'" + str11 + "' != '" + "1st" + "'", str11, "1st");
-        org.junit.Assert.assertEquals("'" + str12 + "' != '" + "(inva" + "'", str12, "(inva");
-        org.junit.Assert.assertEquals("'" + str13 + "' != '" + "(62, " + "'", str13, "(62, ");
-        org.junit.Assert.assertEquals("'" + str14 + "' != '" + "(35, " + "'", str14, "(35, ");
-    }
-
-    @Test
-    public void test0357() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0357");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00352");
         // The following exception was thrown during execution in test generation
         try {
             java.lang.Boolean boolean4 = comp5111.assignment.cut.Subject.StringAlgorithms.strToBoolean("(inva", "-1 S", "#######1st", "-2147483648-10-01aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
@@ -3442,17 +3353,17 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0358() throws Throwable {
+    public void test00353() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0358");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00353");
         int int2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.calcDaysInMonth(1, 365);
         org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
     }
 
     @Test
-    public void test0359() throws Throwable {
+    public void test00354() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0359");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00354");
         java.nio.ByteBuffer byteBuffer1 = null;
         java.lang.StringBuilder stringBuilder2 = null;
         // The following exception was thrown during execution in test generation
@@ -3465,25 +3376,25 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0360() throws Throwable {
+    public void test00355() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0360");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00355");
         java.lang.String str1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.roundSecondToString((long) 365);
         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "6 M" + "'", str1, "6 M");
     }
 
     @Test
-    public void test0361() throws Throwable {
+    public void test00356() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0361");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00356");
         java.lang.String str1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.dayStr(1);
         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "1st" + "'", str1, "1st");
     }
 
     @Test
-    public void test0362() throws Throwable {
+    public void test00357() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0362");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00357");
         comp5111.assignment.cut.Subject subject0 = new comp5111.assignment.cut.Subject();
         comp5111.assignment.cut.Subject.GamePlayer gamePlayer2 = subject0.new GamePlayer("-2147483648-10-01");
         int int3 = gamePlayer2.getScore();
@@ -3495,90 +3406,90 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0363() throws Throwable {
+    public void test00358() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0363");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00358");
         int int1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.getQuarter((-1));
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + (-1) + "'", int1 == (-1));
     }
 
     @Test
-    public void test0364() throws Throwable {
+    public void test00359() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0364");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00359");
         int[] intArray1 = comp5111.assignment.cut.Subject.StringAlgorithms.getVersionNo("(0, 10)");
         org.junit.Assert.assertNotNull(intArray1);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray1), "[0, 0, 0, 0]");
     }
 
     @Test
-    public void test0365() throws Throwable {
+    public void test00360() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0365");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00360");
         java.lang.String str1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.month2MonAbbr((int) (byte) 0);
         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "(invalid)" + "'", str1, "(invalid)");
     }
 
     @Test
-    public void test0366() throws Throwable {
+    public void test00361() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0366");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00361");
         java.lang.String str1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.month2MonAbbr(71);
         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "(invalid)" + "'", str1, "(invalid)");
     }
 
     @Test
-    public void test0367() throws Throwable {
+    public void test00362() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0367");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00362");
         boolean boolean1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.judgeLeapYear(35);
         org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
     }
 
     @Test
-    public void test0368() throws Throwable {
+    public void test00363() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0368");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00363");
         int int2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.daysBetweenDateStrings("32 S", "Jan");
         org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-2147483648) + "'", int2 == (-2147483648));
     }
 
     @Test
-    public void test0369() throws Throwable {
+    public void test00364() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0369");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00364");
         boolean boolean1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.judgeLeapYear(365);
         org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
     }
 
     @Test
-    public void test0370() throws Throwable {
+    public void test00365() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0370");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00365");
         java.util.List<java.lang.String> strList6 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.listDatesBetween(1, 25, 356, 35, (int) (byte) 10, 35);
         org.junit.Assert.assertNotNull(strList6);
     }
 
     @Test
-    public void test0371() throws Throwable {
+    public void test00366() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0371");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00366");
         java.lang.String str3 = comp5111.assignment.cut.Subject.StringAlgorithms.padRight("0001-01-31", (short) (byte) 1, ' ');
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "0001-01-31" + "'", str3, "0001-01-31");
     }
 
     @Test
-    public void test0372() throws Throwable {
+    public void test00367() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0372");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00367");
         java.lang.String str3 = comp5111.assignment.cut.Subject.StringAlgorithms.padLeft("0035-10-31", (short) 100, '4');
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "4444444444444444444444444444444444444444444444444444444444444444444444444444444444444444440035-10-31" + "'", str3, "4444444444444444444444444444444444444444444444444444444444444444444444444444444444444444440035-10-31");
     }
 
     @Test
-    public void test0373() throws Throwable {
+    public void test00368() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0373");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00368");
         byte[] byteArray2 = new byte[] {};
         comp5111.assignment.cut.Subject.StringAlgorithms.enlarge((int) (byte) 1, byteArray2, 0);
         // The following exception was thrown during execution in test generation
@@ -3593,17 +3504,17 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0374() throws Throwable {
+    public void test00369() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0374");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00369");
         java.lang.String str2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.lastDayOfMonth(62, 71);
         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "(invalid)" + "'", str2, "(invalid)");
     }
 
     @Test
-    public void test0375() throws Throwable {
+    public void test00370() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0375");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00370");
         // The following exception was thrown during execution in test generation
         try {
             java.lang.Number number1 = comp5111.assignment.cut.Subject.StringAlgorithms.parseNumber("0035-10-31");
@@ -3614,9 +3525,9 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0376() throws Throwable {
+    public void test00371() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0376");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00371");
         comp5111.assignment.cut.Subject subject0 = new comp5111.assignment.cut.Subject();
         comp5111.assignment.cut.Subject.GamePlayer gamePlayer2 = subject0.new GamePlayer("-2147483648-10-01");
         comp5111.assignment.cut.Subject.GamePlace gamePlace5 = subject0.new GamePlace(62, 1);
@@ -3626,9 +3537,9 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0377() throws Throwable {
+    public void test00372() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0377");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00372");
         // The following exception was thrown during execution in test generation
         try {
             java.lang.Boolean boolean4 = comp5111.assignment.cut.Subject.StringAlgorithms.strToBoolean("0100-10-31", "44444410 S", "Jan", "(52, 25)");
@@ -3639,34 +3550,34 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0378() throws Throwable {
+    public void test00373() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0378");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00373");
         java.lang.String str3 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.formatFullDate(35, (int) (byte) 1, (int) (short) 100);
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "(invalid)" + "'", str3, "(invalid)");
     }
 
     @Test
-    public void test0379() throws Throwable {
+    public void test00374() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0379");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00374");
         int[] intArray1 = comp5111.assignment.cut.Subject.StringAlgorithms.getVersionNo("10th");
         org.junit.Assert.assertNotNull(intArray1);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray1), "[10, 0, 0, 0]");
     }
 
     @Test
-    public void test0380() throws Throwable {
+    public void test00375() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0380");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00375");
         boolean boolean1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.judgeLeapYear(25);
         org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
     }
 
     @Test
-    public void test0381() throws Throwable {
+    public void test00376() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0381");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00376");
         java.nio.ByteBuffer byteBuffer1 = null;
         java.lang.StringBuilder stringBuilder2 = null;
         // The following exception was thrown during execution in test generation
@@ -3679,9 +3590,9 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0382() throws Throwable {
+    public void test00377() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0382");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00377");
         comp5111.assignment.cut.Subject subject0 = new comp5111.assignment.cut.Subject();
         comp5111.assignment.cut.Subject.GamePlayer gamePlayer2 = subject0.new GamePlayer("-2147483648-10-01");
         comp5111.assignment.cut.Subject.GamePlace gamePlace5 = subject0.new GamePlace(62, 1);
@@ -3697,9 +3608,9 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0383() throws Throwable {
+    public void test00378() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0383");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00378");
         comp5111.assignment.cut.Subject subject0 = null;
         // The following exception was thrown during execution in test generation
         try {
@@ -3711,25 +3622,25 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0384() throws Throwable {
+    public void test00379() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0384");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00379");
         int int1 = comp5111.assignment.cut.Subject.StringAlgorithms.extractIntInStr("-2147483648-10-01aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + 0 + "'", int1 == 0);
     }
 
     @Test
-    public void test0385() throws Throwable {
+    public void test00380() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0385");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00380");
         int int2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.daysBetweenDateStrings("4 S", "10th");
         org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-2147483648) + "'", int2 == (-2147483648));
     }
 
     @Test
-    public void test0386() throws Throwable {
+    public void test00381() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0386");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00381");
         // The following exception was thrown during execution in test generation
         try {
             java.lang.Number number1 = comp5111.assignment.cut.Subject.StringAlgorithms.parseNumber("0100-10-01");
@@ -3740,25 +3651,25 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0387() throws Throwable {
+    public void test00382() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0387");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00382");
         java.lang.String str3 = comp5111.assignment.cut.Subject.StringAlgorithms.padLeft("GamePlayer{name='10th', score=0}", (short) 0, 'a');
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "GamePlayer{name='10th', score=0}" + "'", str3, "GamePlayer{name='10th', score=0}");
     }
 
     @Test
-    public void test0388() throws Throwable {
+    public void test00383() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0388");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00383");
         java.lang.Boolean boolean1 = comp5111.assignment.cut.Subject.StringAlgorithms.strToBoolean("(35, ");
         org.junit.Assert.assertNull(boolean1);
     }
 
     @Test
-    public void test0389() throws Throwable {
+    public void test00384() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0389");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00384");
         // The following exception was thrown during execution in test generation
         try {
             java.lang.Boolean boolean4 = comp5111.assignment.cut.Subject.StringAlgorithms.strToBoolean("-214", "Anonymous Player", "4 S", "6 M");
@@ -3769,49 +3680,49 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0390() throws Throwable {
+    public void test00385() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0390");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00385");
         java.lang.Boolean boolean4 = comp5111.assignment.cut.Subject.StringAlgorithms.strToBoolean("Anonymous Player", "32 S", "32 S", "Anonymous Player");
         org.junit.Assert.assertNull(boolean4);
     }
 
     @Test
-    public void test0391() throws Throwable {
+    public void test00386() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0391");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00386");
         java.lang.String str3 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.formatFullDate((-1), (int) (byte) 100, 0);
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "(invalid)" + "'", str3, "(invalid)");
     }
 
     @Test
-    public void test0392() throws Throwable {
+    public void test00387() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0392");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00387");
         java.util.List<java.lang.String> strList6 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.listDatesBetween(52, 365, (int) (short) 1, (int) (byte) 100, 0, 10);
         org.junit.Assert.assertNotNull(strList6);
     }
 
     @Test
-    public void test0393() throws Throwable {
+    public void test00388() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0393");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00388");
         int int4 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.monthsBetween(71, (int) '#', (int) 'a', (int) '4');
         org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
     }
 
     @Test
-    public void test0394() throws Throwable {
+    public void test00389() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0394");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00389");
         java.lang.String str2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.firstDayOfMonth(52, 1);
         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "0052-01-01" + "'", str2, "0052-01-01");
     }
 
     @Test
-    public void test0395() throws Throwable {
+    public void test00390() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0395");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00390");
         // The following exception was thrown during execution in test generation
         try {
             java.lang.Number number1 = comp5111.assignment.cut.Subject.StringAlgorithms.parseNumber("(10, 10)");
@@ -3822,9 +3733,9 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0396() throws Throwable {
+    public void test00391() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0396");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00391");
         // The following exception was thrown during execution in test generation
         try {
             int int6 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.daysBetweenDates((int) '4', (int) '#', 32, 31, 0, 71);
@@ -3835,9 +3746,9 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0397() throws Throwable {
+    public void test00392() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0397");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00392");
         // The following exception was thrown during execution in test generation
         try {
             java.lang.Boolean boolean4 = comp5111.assignment.cut.Subject.StringAlgorithms.strToBoolean("-2147483648-10-01aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "Anonymous Player", "GamePlayer{name='-2147483648-10-01', score=10}", "31 S");
@@ -3848,137 +3759,137 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0398() throws Throwable {
+    public void test00393() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0398");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00393");
         java.lang.String str1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.dayStr(62);
         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "(invalid)" + "'", str1, "(invalid)");
     }
 
     @Test
-    public void test0399() throws Throwable {
+    public void test00394() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0399");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00394");
         java.lang.String str3 = comp5111.assignment.cut.Subject.StringAlgorithms.padRight("1 S", (short) (byte) 1, ' ');
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "1 S" + "'", str3, "1 S");
     }
 
     @Test
-    public void test0400() throws Throwable {
+    public void test00395() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0400");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00395");
         java.util.List<java.lang.String> strList6 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.listDatesBetween((int) (short) 0, 35, 0, 0, (int) (byte) 0, (-2147483648));
         org.junit.Assert.assertNotNull(strList6);
     }
 
     @Test
-    public void test0401() throws Throwable {
+    public void test00396() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0401");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00396");
         java.lang.String str3 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.formatFullDate(35, (int) (short) 0, 4);
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "(invalid)" + "'", str3, "(invalid)");
     }
 
     @Test
-    public void test0402() throws Throwable {
+    public void test00397() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0402");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00397");
         java.util.List<java.lang.String> strList6 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.listDatesBetween((int) (byte) 10, 25, (int) (short) 10, (int) (short) 10, 62, 10);
         org.junit.Assert.assertNotNull(strList6);
     }
 
     @Test
-    public void test0403() throws Throwable {
+    public void test00398() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0403");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00398");
         java.lang.String str1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.month2MonAbbr(35);
         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "(invalid)" + "'", str1, "(invalid)");
     }
 
     @Test
-    public void test0404() throws Throwable {
+    public void test00399() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0404");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00399");
         java.lang.Boolean boolean1 = comp5111.assignment.cut.Subject.StringAlgorithms.strToBoolean("0035-10-31");
         org.junit.Assert.assertNull(boolean1);
     }
 
     @Test
-    public void test0405() throws Throwable {
+    public void test00400() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0405");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00400");
         int int2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.daysBetweenDateStrings("25th", "(35, ");
         org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-2147483648) + "'", int2 == (-2147483648));
     }
 
     @Test
-    public void test0406() throws Throwable {
+    public void test00401() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0406");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00401");
         java.lang.String str1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.dayStr((int) '#');
         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "(invalid)" + "'", str1, "(invalid)");
     }
 
     @Test
-    public void test0407() throws Throwable {
+    public void test00402() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0407");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00402");
         java.util.List<java.lang.String> strList6 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.listDatesBetween(356, (int) (byte) 0, 356, 52, 1, 32);
         org.junit.Assert.assertNotNull(strList6);
     }
 
     @Test
-    public void test0408() throws Throwable {
+    public void test00403() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0408");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00403");
         java.lang.String str2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.firstDayOfMonth(31, 35);
         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "(invalid)" + "'", str2, "(invalid)");
     }
 
     @Test
-    public void test0409() throws Throwable {
+    public void test00404() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0409");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00404");
         java.lang.String str1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.dayStr(31);
         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "31st" + "'", str1, "31st");
     }
 
     @Test
-    public void test0410() throws Throwable {
+    public void test00405() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0410");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00405");
         int int1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.monAbbr2month("(inva");
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + (-1) + "'", int1 == (-1));
     }
 
     @Test
-    public void test0411() throws Throwable {
+    public void test00406() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0411");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00406");
         boolean boolean1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.judgeLeapYear(62);
         org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
     }
 
     @Test
-    public void test0412() throws Throwable {
+    public void test00407() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0412");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00407");
         int int2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.daysBetweenDateStrings("10 S", "##########################################################################################0032-01-01");
         org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-2147483648) + "'", int2 == (-2147483648));
     }
 
     @Test
-    public void test0413() throws Throwable {
+    public void test00408() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0413");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00408");
         int int2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.calcDaysInMonth(31, 35);
         org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
     }
 
     @Test
-    public void test0414() throws Throwable {
+    public void test00409() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0414");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00409");
         // The following exception was thrown during execution in test generation
         try {
             java.lang.Boolean boolean4 = comp5111.assignment.cut.Subject.StringAlgorithms.strToBoolean("(1, 365)", "GamePlayer{name='10th', score=0}", "(0, 10)", "1 S");
@@ -3989,17 +3900,17 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0415() throws Throwable {
+    public void test00410() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0415");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00410");
         boolean boolean2 = comp5111.assignment.cut.Subject.StringAlgorithms.startsWithIgnoreCase("(71, ", "Oct");
         org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
     }
 
     @Test
-    public void test0416() throws Throwable {
+    public void test00411() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0416");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00411");
         byte[] byteArray2 = new byte[] {};
         comp5111.assignment.cut.Subject.StringAlgorithms.enlarge((int) (byte) 1, byteArray2, 0);
         // The following exception was thrown during execution in test generation
@@ -4014,65 +3925,65 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0417() throws Throwable {
+    public void test00412() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0417");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00412");
         java.lang.String str3 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.formatFullDate((int) (short) 0, (int) (short) -1, 97);
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "(invalid)" + "'", str3, "(invalid)");
     }
 
     @Test
-    public void test0418() throws Throwable {
+    public void test00413() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0418");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00413");
         int int1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.getQuarter(1);
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + 1 + "'", int1 == 1);
     }
 
     @Test
-    public void test0419() throws Throwable {
+    public void test00414() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0419");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00414");
         int int2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.calcDaysInMonth(32, 31);
         org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
     }
 
     @Test
-    public void test0420() throws Throwable {
+    public void test00415() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0420");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00415");
         java.lang.String str3 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.formatFullDate((int) (short) -1, (-2147483648), (int) '4');
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "(invalid)" + "'", str3, "(invalid)");
     }
 
     @Test
-    public void test0421() throws Throwable {
+    public void test00416() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0421");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00416");
         java.lang.String str3 = comp5111.assignment.cut.Subject.StringAlgorithms.padRight("10th", (short) (byte) 10, 'a');
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "10thaaaaaa" + "'", str3, "10thaaaaaa");
     }
 
     @Test
-    public void test0422() throws Throwable {
+    public void test00417() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0422");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00417");
         java.util.List<java.lang.String> strList6 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.listDatesBetween((int) (byte) 1, 10, (-2147483648), 62, 35, (int) (short) 0);
         org.junit.Assert.assertNotNull(strList6);
     }
 
     @Test
-    public void test0423() throws Throwable {
+    public void test00418() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0423");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00418");
         int int1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.getQuarter(4);
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + 2 + "'", int1 == 2);
     }
 
     @Test
-    public void test0424() throws Throwable {
+    public void test00419() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0424");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00419");
         // The following exception was thrown during execution in test generation
         try {
             int int6 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.daysBetweenDates((int) '#', (int) (byte) 0, 366, (int) (byte) 1, (int) (byte) 1, (int) (byte) 1);
@@ -4083,9 +3994,9 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0425() throws Throwable {
+    public void test00420() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0425");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00420");
         byte[] byteArray5 = new byte[] { (byte) 10, (byte) 10, (byte) 1, (byte) 0 };
         // The following exception was thrown during execution in test generation
         try {
@@ -4099,17 +4010,17 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0426() throws Throwable {
+    public void test00421() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0426");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00421");
         java.lang.String str2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.firstDayOfMonth((int) ' ', (int) (byte) 1);
         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "0032-01-01" + "'", str2, "0032-01-01");
     }
 
     @Test
-    public void test0427() throws Throwable {
+    public void test00422() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0427");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00422");
         comp5111.assignment.cut.Subject subject0 = new comp5111.assignment.cut.Subject();
         comp5111.assignment.cut.Subject.GamePlayer gamePlayer2 = subject0.new GamePlayer("-2147483648-10-01");
         comp5111.assignment.cut.Subject.GamePlace gamePlace5 = subject0.new GamePlace(62, 1);
@@ -4140,17 +4051,17 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0428() throws Throwable {
+    public void test00423() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0428");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00423");
         int int2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.daysBetweenDateStrings("4", "-2147483648-10-01");
         org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-2147483648) + "'", int2 == (-2147483648));
     }
 
     @Test
-    public void test0429() throws Throwable {
+    public void test00424() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0429");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00424");
         // The following exception was thrown during execution in test generation
         try {
             int int6 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.daysBetweenDates(2, (int) (byte) 0, 31, (int) (byte) 0, (int) (byte) 1, (int) (short) 0);
@@ -4161,50 +4072,50 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0430() throws Throwable {
+    public void test00425() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0430");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00425");
         int[] intArray1 = comp5111.assignment.cut.Subject.StringAlgorithms.getVersionNo("4");
         org.junit.Assert.assertNotNull(intArray1);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray1), "[4, 0, 0, 0]");
     }
 
     @Test
-    public void test0431() throws Throwable {
+    public void test00426() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0431");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00426");
         java.lang.Boolean boolean1 = comp5111.assignment.cut.Subject.StringAlgorithms.strToBoolean("25th");
         org.junit.Assert.assertNull(boolean1);
     }
 
     @Test
-    public void test0432() throws Throwable {
+    public void test00427() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0432");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00427");
         java.lang.String str2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.lastDayOfMonth(365, 97);
         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "(invalid)" + "'", str2, "(invalid)");
     }
 
     @Test
-    public void test0433() throws Throwable {
+    public void test00428() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0433");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00428");
         int int2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.calcDaysInMonth(1, 356);
         org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
     }
 
     @Test
-    public void test0434() throws Throwable {
+    public void test00429() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0434");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00429");
         boolean boolean1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.judgeLeapYear((int) (short) 100);
         org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
     }
 
     @Test
-    public void test0435() throws Throwable {
+    public void test00430() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0435");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00430");
         byte[] byteArray3 = new byte[] {};
         comp5111.assignment.cut.Subject.StringAlgorithms.enlarge((int) (byte) 1, byteArray3, 0);
         comp5111.assignment.cut.Subject.StringAlgorithms.enlarge(100, byteArray3, 0);
@@ -4220,17 +4131,17 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0436() throws Throwable {
+    public void test00431() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0436");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00431");
         boolean boolean2 = comp5111.assignment.cut.Subject.StringAlgorithms.startsWithIgnoreCase("", "(62, ");
         org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
     }
 
     @Test
-    public void test0437() throws Throwable {
+    public void test00432() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0437");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00432");
         comp5111.assignment.cut.Subject subject0 = new comp5111.assignment.cut.Subject();
         comp5111.assignment.cut.Subject.GamePlayer gamePlayer2 = subject0.new GamePlayer("#######1st");
         comp5111.assignment.cut.Subject.GamePlayer gamePlayer3 = gamePlayer2.clone();
@@ -4238,41 +4149,41 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0438() throws Throwable {
+    public void test00433() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0438");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00433");
         java.lang.Number number1 = comp5111.assignment.cut.Subject.StringAlgorithms.parseNumber("-214");
         org.junit.Assert.assertNotNull(number1);
     }
 
     @Test
-    public void test0439() throws Throwable {
+    public void test00434() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0439");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00434");
         int int1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.monAbbr2month("31st");
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + (-1) + "'", int1 == (-1));
     }
 
     @Test
-    public void test0440() throws Throwable {
+    public void test00435() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0440");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00435");
         java.lang.String str3 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.formatFullDate(62, (int) '4', (int) (byte) 0);
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "(invalid)" + "'", str3, "(invalid)");
     }
 
     @Test
-    public void test0441() throws Throwable {
+    public void test00436() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0441");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00436");
         int int1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.monAbbr2month("6 M");
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + (-1) + "'", int1 == (-1));
     }
 
     @Test
-    public void test0442() throws Throwable {
+    public void test00437() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0442");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00437");
         // The following exception was thrown during execution in test generation
         try {
             java.lang.Boolean boolean4 = comp5111.assignment.cut.Subject.StringAlgorithms.strToBoolean("(62, 1)", "(10, 10)", "##########################################################################################0032-01-01", "(1, ");
@@ -4283,49 +4194,49 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0443() throws Throwable {
+    public void test00438() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0443");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00438");
         int int2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.calcDaysInMonth(97, (int) (short) -1);
         org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
     }
 
     @Test
-    public void test0444() throws Throwable {
+    public void test00439() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0444");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00439");
         java.lang.String str2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.firstDayOfMonth((int) (short) 0, 100);
         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "(invalid)" + "'", str2, "(invalid)");
     }
 
     @Test
-    public void test0445() throws Throwable {
+    public void test00440() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0445");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00440");
         java.util.List<java.lang.String> strList6 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.listDatesBetween(10, 1, (int) ' ', (int) (short) 1, 366, 89);
         org.junit.Assert.assertNotNull(strList6);
     }
 
     @Test
-    public void test0446() throws Throwable {
+    public void test00441() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0446");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00441");
         java.lang.String str3 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.formatFullDate(0, 2, (int) (byte) 1);
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "1st Feb 0" + "'", str3, "1st Feb 0");
     }
 
     @Test
-    public void test0447() throws Throwable {
+    public void test00442() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0447");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00442");
         java.lang.String str1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.roundSecondToString((long) 35);
         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "35 S" + "'", str1, "35 S");
     }
 
     @Test
-    public void test0448() throws Throwable {
+    public void test00443() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0448");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00443");
         byte[] byteArray7 = new byte[] { (byte) 10, (byte) 100, (byte) 0, (byte) 1, (byte) 100 };
         comp5111.assignment.cut.Subject.StringAlgorithms.enlarge(62, byteArray7, (int) (short) 0);
         // The following exception was thrown during execution in test generation
@@ -4340,33 +4251,33 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0449() throws Throwable {
+    public void test00444() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0449");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00444");
         java.util.List<java.lang.String> strList6 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.listDatesBetween((int) '4', 31, 32, 4, 32, 32);
         org.junit.Assert.assertNotNull(strList6);
     }
 
     @Test
-    public void test0450() throws Throwable {
+    public void test00445() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0450");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00445");
         int int2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.daysBetweenDateStrings("6 M", "#######1st");
         org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-2147483648) + "'", int2 == (-2147483648));
     }
 
     @Test
-    public void test0451() throws Throwable {
+    public void test00446() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0451");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00446");
         int int1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.daysInYear(97);
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + 365 + "'", int1 == 365);
     }
 
     @Test
-    public void test0452() throws Throwable {
+    public void test00447() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0452");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00447");
         comp5111.assignment.cut.Subject subject0 = null;
         // The following exception was thrown during execution in test generation
         try {
@@ -4378,41 +4289,41 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0453() throws Throwable {
+    public void test00448() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0453");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00448");
         int int2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.calcDaysInMonth(62, (int) ' ');
         org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
     }
 
     @Test
-    public void test0454() throws Throwable {
+    public void test00449() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0454");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00449");
         int int1 = comp5111.assignment.cut.Subject.StringAlgorithms.extractIntInStr("25th");
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + 25 + "'", int1 == 25);
     }
 
     @Test
-    public void test0455() throws Throwable {
+    public void test00450() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0455");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00450");
         java.lang.String str3 = comp5111.assignment.cut.Subject.StringAlgorithms.padRight("-2147483648-10-01", (short) -1, 'a');
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "-2147483648-10-01" + "'", str3, "-2147483648-10-01");
     }
 
     @Test
-    public void test0456() throws Throwable {
+    public void test00451() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0456");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00451");
         java.lang.String str2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.firstDayOfMonth(1, (int) (byte) 1);
         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "0001-01-01" + "'", str2, "0001-01-01");
     }
 
     @Test
-    public void test0457() throws Throwable {
+    public void test00452() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0457");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00452");
         // The following exception was thrown during execution in test generation
         try {
             int int6 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.daysBetweenDates((int) ' ', 71, 366, 31, (int) ' ', 97);
@@ -4423,9 +4334,9 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0458() throws Throwable {
+    public void test00453() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0458");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00453");
         // The following exception was thrown during execution in test generation
         try {
             java.lang.Boolean boolean4 = comp5111.assignment.cut.Subject.StringAlgorithms.strToBoolean("(97, 10)", "2 M", "1 S", "0001-01-01");
@@ -4436,49 +4347,49 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0459() throws Throwable {
+    public void test00454() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0459");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00454");
         int int2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.daysBetweenDateStrings("(invalid)", "        2 ");
         org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-2147483648) + "'", int2 == (-2147483648));
     }
 
     @Test
-    public void test0460() throws Throwable {
+    public void test00455() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0460");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00455");
         java.lang.String str3 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.formatFullDate(62, 2, (int) (short) 10);
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "10th Feb 62" + "'", str3, "10th Feb 62");
     }
 
     @Test
-    public void test0461() throws Throwable {
+    public void test00456() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0461");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00456");
         int int1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.daysInYear(0);
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + 366 + "'", int1 == 366);
     }
 
     @Test
-    public void test0462() throws Throwable {
+    public void test00457() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0462");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00457");
         int int1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.monAbbr2month("1st Feb 0");
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + (-1) + "'", int1 == (-1));
     }
 
     @Test
-    public void test0463() throws Throwable {
+    public void test00458() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0463");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00458");
         java.lang.String str1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.roundSecondToString((long) 2);
         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "2 S" + "'", str1, "2 S");
     }
 
     @Test
-    public void test0464() throws Throwable {
+    public void test00459() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0464");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00459");
         int[] intArray1 = comp5111.assignment.cut.Subject.StringAlgorithms.getVersionNo("31 S");
         java.lang.Class<?> wildcardClass2 = intArray1.getClass();
         org.junit.Assert.assertNotNull(intArray1);
@@ -4487,25 +4398,25 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0465() throws Throwable {
+    public void test00460() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0465");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00460");
         java.lang.String str3 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.formatFullDate(365, (int) (byte) 1, (int) (byte) 0);
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "(invalid)" + "'", str3, "(invalid)");
     }
 
     @Test
-    public void test0466() throws Throwable {
+    public void test00461() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0466");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00461");
         java.lang.String str2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.firstDayOfMonth((int) '#', (int) 'a');
         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "(invalid)" + "'", str2, "(invalid)");
     }
 
     @Test
-    public void test0467() throws Throwable {
+    public void test00462() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0467");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00462");
         // The following exception was thrown during execution in test generation
         try {
             java.lang.Boolean boolean4 = comp5111.assignment.cut.Subject.StringAlgorithms.strToBoolean("4 S", "aaaaaaaaaa", "(0, 10)", "(0, 0)");
@@ -4516,17 +4427,17 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0468() throws Throwable {
+    public void test00463() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0468");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00463");
         int int1 = comp5111.assignment.cut.Subject.StringAlgorithms.extractIntInStr("(97, 10)");
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + 0 + "'", int1 == 0);
     }
 
     @Test
-    public void test0469() throws Throwable {
+    public void test00464() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0469");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00464");
         java.nio.ByteBuffer byteBuffer1 = null;
         java.lang.StringBuilder stringBuilder2 = null;
         // The following exception was thrown during execution in test generation
@@ -4539,17 +4450,17 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0470() throws Throwable {
+    public void test00465() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0470");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00465");
         int int1 = comp5111.assignment.cut.Subject.StringAlgorithms.extractIntInStr("4444444444444444444444444444444444444444444444444444444444444444444444444444444444444444440035-10-31");
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + 477214179 + "'", int1 == 477214179);
     }
 
     @Test
-    public void test0471() throws Throwable {
+    public void test00466() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0471");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00466");
         // The following exception was thrown during execution in test generation
         try {
             java.lang.Number number1 = comp5111.assignment.cut.Subject.StringAlgorithms.parseNumber("0052-01-01");
@@ -4560,9 +4471,9 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0472() throws Throwable {
+    public void test00467() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0472");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00467");
         // The following exception was thrown during execution in test generation
         try {
             int int6 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.daysBetweenDates(71, (int) (byte) 10, (int) (short) 10, 71, (int) (short) -1, (int) '4');
@@ -4573,40 +4484,25 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0473() throws Throwable {
+    public void test00468() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0473");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00468");
         java.lang.String str2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.lastDayOfMonth(366, 62);
         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "(invalid)" + "'", str2, "(invalid)");
     }
 
     @Test
-    public void test0474() throws Throwable {
+    public void test00469() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0474");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00469");
         java.lang.String str2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.firstDayOfMonth((int) (short) 100, 356);
         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "(invalid)" + "'", str2, "(invalid)");
     }
 
     @Test
-    public void test0475() throws Throwable {
+    public void test00470() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0475");
-        comp5111.assignment.cut.Subject subject0 = new comp5111.assignment.cut.Subject();
-        comp5111.assignment.cut.Subject.GamePlayer gamePlayer2 = subject0.new GamePlayer("-2147483648-10-01");
-        comp5111.assignment.cut.Subject.GamePlace gamePlace5 = subject0.new GamePlace(62, 1);
-        comp5111.assignment.cut.Subject.GamePlace gamePlace8 = subject0.new GamePlace(0, 0);
-        gamePlace8.y(0);
-        int int11 = gamePlace8.y();
-        java.lang.String str12 = gamePlace8.toString();
-        org.junit.Assert.assertTrue("'" + int11 + "' != '" + 0 + "'", int11 == 0);
-        org.junit.Assert.assertEquals("'" + str12 + "' != '" + "(0, 0)" + "'", str12, "(0, 0)");
-    }
-
-    @Test
-    public void test0476() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0476");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00470");
         // The following exception was thrown during execution in test generation
         try {
             java.lang.Boolean boolean4 = comp5111.assignment.cut.Subject.StringAlgorithms.strToBoolean("(0, 97)", "0100-01-31", "", "GamePlayer{name='Anonymous Player', score=0}");
@@ -4617,17 +4513,17 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0477() throws Throwable {
+    public void test00471() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0477");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00471");
         int int4 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.monthsBetween(2, (int) (byte) 0, (int) (short) 0, 0);
         org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
     }
 
     @Test
-    public void test0478() throws Throwable {
+    public void test00472() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0478");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00472");
         // The following exception was thrown during execution in test generation
         try {
             java.lang.Boolean boolean4 = comp5111.assignment.cut.Subject.StringAlgorithms.strToBoolean("Anonymous Player", "GamePlayer{name='-2147483648-10-01', score=10}", "#######1st", "        2 ");
@@ -4638,9 +4534,9 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0479() throws Throwable {
+    public void test00473() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0479");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00473");
         // The following exception was thrown during execution in test generation
         try {
             java.lang.Number number1 = comp5111.assignment.cut.Subject.StringAlgorithms.parseNumber("4 S");
@@ -4651,33 +4547,33 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0480() throws Throwable {
+    public void test00474() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0480");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00474");
         int int1 = comp5111.assignment.cut.Subject.StringAlgorithms.extractIntInStr("(0, 0)");
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + 0 + "'", int1 == 0);
     }
 
     @Test
-    public void test0481() throws Throwable {
+    public void test00475() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0481");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00475");
         int int1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.monAbbr2month("2 S");
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + (-1) + "'", int1 == (-1));
     }
 
     @Test
-    public void test0482() throws Throwable {
+    public void test00476() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0482");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00476");
         int int1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.monAbbr2month("-1 S");
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + (-1) + "'", int1 == (-1));
     }
 
     @Test
-    public void test0483() throws Throwable {
+    public void test00477() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0483");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00477");
         // The following exception was thrown during execution in test generation
         try {
             java.lang.Boolean boolean4 = comp5111.assignment.cut.Subject.StringAlgorithms.strToBoolean("10 S", "10th", "(10, 10)", "                                                                                          0100-01-01");
@@ -4688,41 +4584,41 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0484() throws Throwable {
+    public void test00478() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0484");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00478");
         int int1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.daysInYear((int) '4');
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + 366 + "'", int1 == 366);
     }
 
     @Test
-    public void test0485() throws Throwable {
+    public void test00479() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0485");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00479");
         java.lang.String str1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.dayStr(52);
         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "(invalid)" + "'", str1, "(invalid)");
     }
 
     @Test
-    public void test0486() throws Throwable {
+    public void test00480() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0486");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00480");
         java.lang.String str1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.roundSecondToString((long) (-2147483648));
         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "-2147483648 S" + "'", str1, "-2147483648 S");
     }
 
     @Test
-    public void test0487() throws Throwable {
+    public void test00481() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0487");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00481");
         java.lang.String str1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.month2MonAbbr(365);
         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "(invalid)" + "'", str1, "(invalid)");
     }
 
     @Test
-    public void test0488() throws Throwable {
+    public void test00482() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0488");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00482");
         // The following exception was thrown during execution in test generation
         try {
             java.lang.Number number1 = comp5111.assignment.cut.Subject.StringAlgorithms.parseNumber("0001-01-31");
@@ -4733,9 +4629,9 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0489() throws Throwable {
+    public void test00483() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0489");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00483");
         java.nio.ByteBuffer byteBuffer1 = null;
         java.lang.StringBuilder stringBuilder2 = null;
         // The following exception was thrown during execution in test generation
@@ -4748,9 +4644,9 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0490() throws Throwable {
+    public void test00484() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0490");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00484");
         // The following exception was thrown during execution in test generation
         try {
             java.lang.Number number1 = comp5111.assignment.cut.Subject.StringAlgorithms.parseNumber("##########################################################################################0032-01-01");
@@ -4761,9 +4657,9 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0491() throws Throwable {
+    public void test00485() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0491");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00485");
         char[] charArray1 = null;
         // The following exception was thrown during execution in test generation
         try {
@@ -4775,40 +4671,17 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0492() throws Throwable {
+    public void test00486() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0492");
-        char[] charArray12 = new char[] { 'a', '4', '#', '4', '#', ' ' };
-        java.lang.String str13 = comp5111.assignment.cut.Subject.StringAlgorithms.parseToken("1st", charArray12);
-        java.lang.String str14 = comp5111.assignment.cut.Subject.StringAlgorithms.parseToken("(invalid)", charArray12);
-        java.lang.String str15 = comp5111.assignment.cut.Subject.StringAlgorithms.parseToken("hi!", charArray12);
-        java.lang.String str16 = comp5111.assignment.cut.Subject.StringAlgorithms.parseToken("0100-10-01", charArray12);
-        java.lang.String str17 = comp5111.assignment.cut.Subject.StringAlgorithms.parseToken("2 M", charArray12);
-        java.lang.String str18 = comp5111.assignment.cut.Subject.StringAlgorithms.parseToken("(71, #####", charArray12);
-        org.junit.Assert.assertNotNull(charArray12);
-        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray12), "a4#4# ");
-        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray12), "a4#4# ");
-        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray12), "[a, 4, #, 4, #,  ]");
-        org.junit.Assert.assertEquals("'" + str13 + "' != '" + "1st" + "'", str13, "1st");
-        org.junit.Assert.assertEquals("'" + str14 + "' != '" + "(inva" + "'", str14, "(inva");
-        org.junit.Assert.assertEquals("'" + str15 + "' != '" + "hi!" + "'", str15, "hi!");
-        org.junit.Assert.assertEquals("'" + str16 + "' != '" + "0100-10-01" + "'", str16, "0100-10-01");
-        org.junit.Assert.assertEquals("'" + str17 + "' != '" + "2 " + "'", str17, "2 ");
-        org.junit.Assert.assertEquals("'" + str18 + "' != '" + "(71, " + "'", str18, "(71, ");
-    }
-
-    @Test
-    public void test0493() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0493");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00486");
         int int1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.getQuarter(365);
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + (-1) + "'", int1 == (-1));
     }
 
     @Test
-    public void test0494() throws Throwable {
+    public void test00487() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0494");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00487");
         // The following exception was thrown during execution in test generation
         try {
             java.lang.Number number1 = comp5111.assignment.cut.Subject.StringAlgorithms.parseNumber("(62, ");
@@ -4819,9 +4692,9 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0495() throws Throwable {
+    public void test00488() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0495");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00488");
         comp5111.assignment.cut.Subject subject0 = new comp5111.assignment.cut.Subject();
         comp5111.assignment.cut.Subject.GamePlayer gamePlayer2 = subject0.new GamePlayer("-2147483648-10-01");
         comp5111.assignment.cut.Subject.GamePlace gamePlace5 = subject0.new GamePlace(62, 1);
@@ -4834,50 +4707,130 @@ public class Regression_0_Test0 {
     }
 
     @Test
-    public void test0496() throws Throwable {
+    public void test00489() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0496");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00489");
         java.util.List<java.lang.String> strList6 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.listDatesBetween(141, (int) '#', (int) '#', 10, (int) (short) -1, (int) (short) -1);
         org.junit.Assert.assertNotNull(strList6);
     }
 
     @Test
-    public void test0497() throws Throwable {
+    public void test00490() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0497");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00490");
         boolean boolean2 = comp5111.assignment.cut.Subject.StringAlgorithms.startsWithIgnoreCase("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa10th", "1st Feb 0");
         org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
     }
 
     @Test
-    public void test0498() throws Throwable {
+    public void test00491() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0498");
-        comp5111.assignment.cut.Subject subject0 = new comp5111.assignment.cut.Subject();
-        comp5111.assignment.cut.Subject.GamePlayer gamePlayer2 = subject0.new GamePlayer("-2147483648-10-01");
-        comp5111.assignment.cut.Subject.GamePlace gamePlace5 = subject0.new GamePlace(62, 1);
-        comp5111.assignment.cut.Subject.GamePlace gamePlace8 = subject0.new GamePlace(0, 0);
-        gamePlace8.y(0);
-        java.lang.String str11 = gamePlace8.toString();
-        int int12 = gamePlace8.x();
-        org.junit.Assert.assertEquals("'" + str11 + "' != '" + "(0, 0)" + "'", str11, "(0, 0)");
-        org.junit.Assert.assertTrue("'" + int12 + "' != '" + 0 + "'", int12 == 0);
-    }
-
-    @Test
-    public void test0499() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0499");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00491");
         int int1 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.daysInYear(35);
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + 365 + "'", int1 == 365);
     }
 
     @Test
-    public void test0500() throws Throwable {
+    public void test00492() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "Regression_0_Test0.test0500");
+            System.out.format("%n%s%n", "Regression_0_Test0.test00492");
         java.lang.String str2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.firstDayOfMonth(0, 52);
         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "(invalid)" + "'", str2, "(invalid)");
+    }
+
+    @Test
+    public void test00493() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "Regression_0_Test0.test00493");
+        // The following exception was thrown during execution in test generation
+        try {
+            java.lang.Number number1 = comp5111.assignment.cut.Subject.StringAlgorithms.parseNumber("Jan");
+            org.junit.Assert.fail("Expected exception of type java.lang.NumberFormatException; message: Jan");
+        } catch (java.lang.NumberFormatException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test00494() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "Regression_0_Test0.test00494");
+        // The following exception was thrown during execution in test generation
+        try {
+            int int6 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.daysBetweenDates(477214179, (int) (short) 1, 1, 71, (int) (byte) -1, (int) '#');
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Invalid date");
+        } catch (java.lang.IllegalArgumentException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test00495() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "Regression_0_Test0.test00495");
+        int[] intArray1 = comp5111.assignment.cut.Subject.StringAlgorithms.getVersionNo("aaaaaaaaaa");
+        org.junit.Assert.assertNotNull(intArray1);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray1), "[0, 0, 0, 0]");
+    }
+
+    @Test
+    public void test00496() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "Regression_0_Test0.test00496");
+        int int2 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.calcDaysInMonth((int) '#', 0);
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
+    }
+
+    @Test
+    public void test00497() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "Regression_0_Test0.test00497");
+        // The following exception was thrown during execution in test generation
+        try {
+            int int6 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.daysBetweenDates(97, 2, (int) ' ', 365, (int) (byte) 100, 2);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Invalid date");
+        } catch (java.lang.IllegalArgumentException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test00498() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "Regression_0_Test0.test00498");
+        byte[] byteArray3 = new byte[] {};
+        comp5111.assignment.cut.Subject.StringAlgorithms.enlarge((int) (byte) 1, byteArray3, 0);
+        comp5111.assignment.cut.Subject.StringAlgorithms.enlarge(97, byteArray3, 0);
+        // The following exception was thrown during execution in test generation
+        try {
+            comp5111.assignment.cut.Subject.StringAlgorithms.enlarge((int) 'a', byteArray3, (int) (short) 10);
+            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: arraycopy: last source index 10 out of bounds for byte[0]");
+        } catch (java.lang.ArrayIndexOutOfBoundsException e) {
+            // Expected exception.
+        }
+        org.junit.Assert.assertNotNull(byteArray3);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray3), "[]");
+    }
+
+    @Test
+    public void test00499() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "Regression_0_Test0.test00499");
+        // The following exception was thrown during execution in test generation
+        try {
+            java.lang.Boolean boolean4 = comp5111.assignment.cut.Subject.StringAlgorithms.strToBoolean("", "0052-01-01", "4 S", "1 S");
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: null");
+        } catch (java.lang.IllegalArgumentException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test00500() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "Regression_0_Test0.test00500");
+        int int4 = comp5111.assignment.cut.Subject.DateTimeAlgorithms.monthsBetween((int) '#', (int) (short) -1, (int) 'a', 100);
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
     }
 }
 
