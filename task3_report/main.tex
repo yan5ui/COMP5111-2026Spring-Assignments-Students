@@ -225,27 +225,30 @@ Tests run: 41,  Failures: 3
 \textbf{Class} & \textbf{Total lines} & \textbf{Covered (\%)} \\
 \midrule
 Subject (outer)              & 1   & 100.0\% \\
-Subject\$StringAlgorithms    & 196 & 101\;\;(51.5\%) \\
+Subject\$StringAlgorithms    & 197 & 105\;\;(53.3\%) \\
 Subject\$DateTimeAlgorithms  & 159 & 50\;\;(31.4\%) \\
-Subject\$GamePlace           & 31  & 9\;\;(29.0\%) \\
-Subject\$GamePlayer          & 25  & 0\;\;(0.0\%) \\
-Subject\$GameConfiguration   & 101 & 0\;\;(0.0\%) \\
+Subject\$GamePlace           & 30  & 9\;\;(30.0\%) \\
+Subject\$GamePlayer          & 24  & 0\;\;(0.0\%) \\
+Subject\$GameConfiguration   & 100 & 0\;\;(0.0\%) \\
 \midrule
-\textbf{Overall}             & \textbf{513} & \textbf{161\;\;(31.4\%)} \\
+\textbf{Overall}             & \textbf{511} & \textbf{165\;\;(32.3\%)} \\
 \bottomrule
 \end{tabular}
 \caption{LLMSimpleTest line coverage (Soot tool)}
 \end{table}
 
+\begin{figure}[h]
+\centering
+\includegraphics[width=\linewidth]{llm_simple.png}
+\caption{EclEmma coverage report for LLMSimpleTest in Eclipse}
+\end{figure}
+
 \subsection{Advanced Prompt}
 
-For the advanced prompt we added three things: a few-shot example, a chain-of-thought instruction
+For the advanced prompt I added three things: a few-shot example, a chain-of-thought instruction
 asking the model to enumerate boundary conditions step by step before writing each test,
-and inline clarifications to the docstrings. Importantly, we did NOT give the model any
-function bodies---all clarifications were derived from reading the docstrings carefully
-(and in a couple cases checking the actual behavior manually to confirm our reading).
-
-\subsubsection*{Interaction Record --- Advanced Prompt}
+and inline clarifications to the docstrings. 
+\subsubsection*{Interaction Record}
 
 \begin{promptbox}
 \textbf{[USER]}\\[4pt]
@@ -261,7 +264,7 @@ Think step by step:
   \item Cover both normal and invalid inputs
 \end{enumerate}
 
-Here's a worked example so you know the expected style:
+Here's a example:
 
 \begin{verbatim}
 /**
@@ -373,8 +376,6 @@ public void isAdjacent_diagonalNotAdjacent() {
 \subsubsection*{Execution Results}
 
 \begin{lstlisting}[style=shell, caption={Test execution output for LLMAdvancedTest}]
-$ java -cp ... org.junit.runner.JUnitCore comp5111.assignment.cut.LLMAdvancedTest
-
 JUnit version 4.12
 .................................................................
 Time: 0.031
@@ -391,17 +392,23 @@ OK (65 tests)
 \textbf{Class} & \textbf{Total lines} & \textbf{Covered (\%)} \\
 \midrule
 Subject (outer)              & 1   & 100.0\% \\
-Subject\$StringAlgorithms    & 196 & 120\;\;(61.2\%) \\
+Subject\$StringAlgorithms    & 197 & 123\;\;(62.4\%) \\
 Subject\$DateTimeAlgorithms  & 159 & 66\;\;(41.5\%) \\
-Subject\$GamePlace           & 31  & 12\;\;(38.7\%) \\
-Subject\$GamePlayer          & 25  & 0\;\;(0.0\%) \\
-Subject\$GameConfiguration   & 101 & 0\;\;(0.0\%) \\
+Subject\$GamePlace           & 30  & 12\;\;(40.0\%) \\
+Subject\$GamePlayer          & 24  & 0\;\;(0.0\%) \\
+Subject\$GameConfiguration   & 100 & 0\;\;(0.0\%) \\
 \midrule
-\textbf{Overall}             & \textbf{513} & \textbf{199\;\;(38.8\%)} \\
+\textbf{Overall}             & \textbf{511} & \textbf{202\;\;(39.5\%)} \\
 \bottomrule
 \end{tabular}
 \caption{LLMAdvancedTest line coverage (Soot tool)}
 \end{table}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\linewidth]{llm_advanced.png}
+\caption{EclEmma coverage report for LLMAdvancedTest in Eclipse}
+\end{figure}
 
 \subsection{Comparison and Discussion}
 
@@ -411,9 +418,9 @@ Subject\$GameConfiguration   & 101 & 0\;\;(0.0\%) \\
 \toprule
 \textbf{Prompt} & \textbf{Tests} & \textbf{Failures} & \textbf{Overall} & \textbf{StringAlg.} & \textbf{DateTimeAlg.} \\
 \midrule
-Simple   & 41 & 3 & 31.4\% & 51.5\% & 31.4\% \\
-Advanced & 65 & 0 & 38.8\% & 61.2\% & 41.5\% \\
-\textbf{$\Delta$} & \textbf{+24} & \textbf{$-3$} & \textbf{+7.4\%} & \textbf{+9.7\%} & \textbf{+10.1\%} \\
+Simple   & 41 & 3 & 32.3\% & 53.3\% & 31.4\% \\
+Advanced & 65 & 0 & 39.5\% & 62.4\% & 41.5\% \\
+\textbf{$\Delta$} & \textbf{+24} & \textbf{$-3$} & \textbf{+7.2\%} & \textbf{+9.1\%} & \textbf{+10.1\%} \\
 \bottomrule
 \end{tabular}
 \caption{Simple vs.\ advanced prompt}
@@ -435,7 +442,7 @@ of \texttt{GamePlace} was too vague for the model to know the method existed.
 %% ==========================================================================
 
 By comparing failures, coverage gaps, and assertion quality across the two prompts,
-we found five recurring patterns that make the current docstrings hard to test from.
+I found five recurring patterns that make the current docstrings hard to test from.
 
 \subsection{Issue 1: Factually Wrong Example in \texttt{extractIntInStr}}
 
@@ -510,23 +517,6 @@ it failed because \texttt{nullString==null} is checked first, returning null.
 This case is actually tricky to handle even with an explicit priority list (see Subtask~4),
 because the model has to reason about two simultaneously-null parameters.
 
-\subsection{Summary}
-
-\begin{table}[h]
-\centering
-\begin{tabular}{p{4.2cm}ccp{3.8cm}}
-\toprule
-\textbf{Issue} & \textbf{Failures} & \textbf{Cov.\ gap} & \textbf{Root cause} \\
-\midrule
-Wrong example (\texttt{extractIntInStr})   & 1 & yes & Factual error in doc \\
-Terminator ambiguity (\texttt{parseToken}) & 2 & yes & Ambiguous word choice \\
-No format (\texttt{roundSecondToString})   & 0 & yes & Missing format spec \\
-Null elements (\texttt{trimArrayElements}) & 0 & yes & Unstated null handling \\
-Sentinel priority (\texttt{strToBoolean})  & 0 & yes & Missing priority order \\
-\bottomrule
-\end{tabular}
-\caption{Summary of specification issues}
-\end{table}
 
 %% ==========================================================================
 \section{Subtask 3: Suggestions for Specification Improvement}
@@ -535,10 +525,7 @@ Sentinel priority (\texttt{strToBoolean})  & 0 & yes & Missing priority order \\
 \subsection{Suggestion 1: Verified Concrete I/O Examples}
 
 The most direct fix for issues like the wrong \texttt{extractIntInStr} example is to add
-a handful of verified input/output pairs. ``Verified'' here means actually running the function
-(or tracing the code) to confirm the example is correct---not just writing down what you
-think it should be.
-
+a handful of verified input/output pairs. 
 \noindent\textbf{Before:}
 \begin{lstlisting}[style=java, numbers=none]
 * 1234a123 -> 123    // wrong
@@ -556,13 +543,6 @@ think it should be.
 *   "007x"   -> 7
 \end{lstlisting}
 
-This can actually be automated. An LLM given the function body can generate and verify
-examples:
-\begin{promptbox}
-\textbf{Automation prompt:} Given this Java function body, generate 6--8 diverse examples
-covering null, empty, all-digits, stops-at-non-digit, and leading-zeros cases. Trace the
-code mentally, and output only verified \texttt{input -> output} pairs.
-\end{promptbox}
 
 \subsection{Suggestion 2: Exact Output Format for String-Returning Functions}
 
@@ -621,7 +601,7 @@ clearer and gives the model a directly testable structure.
  */
 \end{lstlisting}
 
-This is another good candidate for automation---an LLM with the function body can
+An LLM with the function body can
 enumerate all null-combination paths and generate the table.
 
 %% ==========================================================================
@@ -630,7 +610,7 @@ enumerate all null-combination paths and generate the table.
 
 \subsection{Enhancement Approach}
 
-We enhanced the docstrings of five functions (\texttt{extractIntInStr},
+I enhanced the docstrings of five functions (\texttt{extractIntInStr},
 \texttt{parseToken}, \texttt{roundSecondToString}, \texttt{dayStr},
 \texttt{strToBoolean} 4-param) by prompting GPT-5.2 with the original docstring
 \emph{and} the function body. The model's job was to rewrite each docstring to be
@@ -747,7 +727,7 @@ public static int extractIntInStr(String str) {
 
 \subsection{Test Generation from Enhanced Specs}
 
-We then prompted GPT-5.2 with only the enhanced docstrings (still no function bodies) to
+Then I prompted GPT-5.2 with only the enhanced docstrings (still no function bodies) to
 generate \texttt{LLMEnhancedTest}:
 
 \subsubsection*{Interaction Record --- Enhanced Test Generation Prompt}
@@ -843,8 +823,6 @@ public void testStrToBoolean_NullStr_PriorityOrder() {
 \subsection{Results}
 
 \begin{lstlisting}[style=shell, caption={Test execution for LLMEnhancedTest}]
-$ java -cp ... org.junit.runner.JUnitCore comp5111.assignment.cut.LLMEnhancedTest
-
 JUnit version 4.12
 ..................
 Time: 0.028
@@ -885,6 +863,6 @@ The improvements are pretty clear:
 \end{itemize}
 
 Overall, the most impactful single change was fixing wrong examples (eliminates failures immediately)
-and the most automatable change is having an LLM generate verified examples from the function body.
+and the most automatable change is having an verified examples from the function body.
 
 \end{document}

@@ -3,19 +3,18 @@
 \contentsline {section}{\numberline {2}Subtask 1: Test Generation from Current Specifications}{2}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Simple Prompt (Baseline)}{2}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Advanced Prompt}{4}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Comparison and Discussion}{7}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.3}Comparison and Discussion}{8}{subsection.2.3}%
 \contentsline {section}{\numberline {3}Subtask 2: Limitations of Current Specifications}{8}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Issue 1: Factually Wrong Example in \texttt {extractIntInStr}}{8}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Issue 2: Terminator Inclusion Ambiguity in \texttt {parseToken}}{8}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Issue 3: No Output Format for \texttt {roundSecondToString}}{8}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Issue 4: Missing Null-Element Behavior for \texttt {trimArrayElements}}{8}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.2}Issue 2: Terminator Inclusion Ambiguity in \texttt {parseToken}}{9}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Issue 3: No Output Format for \texttt {roundSecondToString}}{9}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Issue 4: Missing Null-Element Behavior for \texttt {trimArrayElements}}{9}{subsection.3.4}%
 \contentsline {subsection}{\numberline {3.5}Issue 5: Unclear Sentinel Priority in \texttt {strToBoolean} (4-param)}{9}{subsection.3.5}%
-\contentsline {subsection}{\numberline {3.6}Summary}{9}{subsection.3.6}%
-\contentsline {section}{\numberline {4}Subtask 3: Suggestions for Specification Improvement}{9}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Suggestion 1: Verified Concrete I/O Examples}{9}{subsection.4.1}%
+\contentsline {section}{\numberline {4}Subtask 3: Suggestions for Specification Improvement}{10}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Suggestion 1: Verified Concrete I/O Examples}{10}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Suggestion 2: Exact Output Format for String-Returning Functions}{10}{subsection.4.2}%
 \contentsline {subsection}{\numberline {4.3}Suggestion 3: Explicit Delimiter Semantics}{10}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}Suggestion 4: Truth Tables for Multi-Parameter Null Behavior}{10}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.4}Suggestion 4: Truth Tables for Multi-Parameter Null Behavior}{11}{subsection.4.4}%
 \contentsline {section}{\numberline {5}Subtask 4: Justifying Enhanced Specification Effectiveness}{11}{section.5}%
 \contentsline {subsection}{\numberline {5.1}Enhancement Approach}{11}{subsection.5.1}%
 \contentsline {subsection}{\numberline {5.2}Test Generation from Enhanced Specs}{13}{subsection.5.2}%
