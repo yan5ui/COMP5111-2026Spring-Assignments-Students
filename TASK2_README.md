@@ -36,20 +36,6 @@ Runs on `comp5111.assignment.cut.Regression_6_Test` (sources in `src/test/exampl
 
 ---
 
-## What the Script Does
-
-The script runs five steps automatically:
-
-| Step | Description |
-|------|-------------|
-| 1 | Compiles `Subject.java` (CUT) with debug info (`-g`) into `target/classes/` |
-| 2 | Compiles the coverage tool source files into `target/classes/` |
-| 3 | Compiles the specified test class sources into `target/test-classes/` |
-| 4 | Runs Soot instrumentation — inserts `CoverageTracker.cover()` probes into each non-identity statement of the CUT and writes instrumented bytecode to `sootOutput/`; saves line metadata to `coverage-metadata.dat` |
-| 5 | Runs the JUnit tests against the **instrumented** classes (`sootOutput/` is first on the classpath) and generates the coverage report |
-
----
-
 ## Output Files
 
 | File | Description |
@@ -95,26 +81,9 @@ OVERALL: N / N lines covered (XX.X%)
 
 | File | Role |
 |------|------|
-| `src/main/java/comp5111/assignment/Assignment1.java` | Entry point — invokes instrumentation |
-| `src/main/java/comp5111/assignment/LineCoverageInstrumenter.java` | Soot instrumentation — loads CUT bytecode, inserts probes, writes to `sootOutput/` |
-| `src/main/java/comp5111/assignment/CoverageTracker.java` | Runtime tracker — records covered lines, persists metadata, generates the report |
-| `src/main/java/comp5111/assignment/TestRunner.java` | JUnit runner — loads metadata, executes tests via `JUnitCore`, triggers report generation |
+| `src/main/java/comp5111/assignment/Assignment1.java` | invokes instrumentation |
+| `src/main/java/comp5111/assignment/LineCoverageInstrumenter.java` | loads CUT bytecode, inserts probes, writes to `sootOutput/` |
+| `src/main/java/comp5111/assignment/CoverageTracker.java` | records covered lines, persists metadata, generates the report |
+| `src/main/java/comp5111/assignment/TestRunner.java` | loads metadata, executes tests via `JUnitCore`, triggers report generation |
 
 ---
-
-## Comparison with EclEmma (Example Test Suite)
-
-Results for `Regression_6_Test` (the provided example test suite).
-Minor differences between Soot and EclEmma are expected because the two tools instrument at different levels and apply different bytecode optimizations.
-
-| Class | Soot tool | EclEmma |
-|-------|-----------|---------|
-| Subject (outer) | 100.0% | 100.0% |
-| Subject$StringAlgorithms | ~63% | ~63% |
-| Subject$DateTimeAlgorithms | ~63% | ~64% |
-| Subject$GamePlace | ~55% | ~55% |
-| Subject$GamePlayer | 0.0% | 0.0% |
-| Subject$GameConfiguration | 0.0% | 0.0% |
-| **Overall** | **~55%** | **~55%** |
-
-Differences are within 1%, consistent with the assignment's allowance for minor tool divergence.
