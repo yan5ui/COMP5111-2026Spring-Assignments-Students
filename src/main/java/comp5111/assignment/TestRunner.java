@@ -4,10 +4,8 @@ import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
 import org.junit.runner.notification.Failure;
 
-/**
- * Runs JUnit tests and generates line coverage report.
- * Must be run with instrumented classes on the classpath (before original classes).
- */
+// 跑测试然后生成覆盖率报告
+// 注意：要把sootOutput放在classpath最前面，这样才能加载到插桩后的class
 public class TestRunner {
 
     public static void main(String[] args) throws Exception {
@@ -15,34 +13,28 @@ public class TestRunner {
             System.err.println("Usage: java comp5111.assignment.TestRunner <test-class-name>");
             System.exit(1);
         }
+        String testCls = args[0];
 
-        String testClassName = args[0];
-        String reportFile = "line-coverage-report.txt";
-
-        // Load metadata from instrumentation step
+        // 先加载之前保存的元数据
         CoverageTracker.loadMetadata();
 
-        System.out.println("Running tests: " + testClassName);
-
-        // Load and run the test class
-        Class<?> testClass = Class.forName(testClassName);
+        System.out.println("Running tests: " + testCls);
+        Class<?> tc = Class.forName(testCls);
         JUnitCore junit = new JUnitCore();
-        Result result = junit.run(testClass);
+        Result res = junit.run(tc);
 
-        System.out.println("Tests run: " + result.getRunCount());
-        System.out.println("Tests failed: " + result.getFailureCount());
-        System.out.println("Tests ignored: " + result.getIgnoreCount());
-        if (result.getFailureCount() > 0) {
-            System.out.println("Failures:");
-            for (Failure failure : result.getFailures()) {
-                System.out.println("  - " + failure.getTestHeader() + ": " + failure.getMessage());
+        System.out.println("Tests run: " + res.getRunCount());
+        System.out.println("Tests failed: " + res.getFailureCount());
+        System.out.println("Tests ignored: " + res.getIgnoreCount());
+        if (res.getFailureCount() > 0) {
+            for (Failure f : res.getFailures()) {
+                System.out.println("  - " + f.getTestHeader() + ": " + f.getMessage());
             }
         }
         System.out.println();
 
-        // Generate report
         System.out.println("Generating line coverage report...");
-        CoverageTracker.generateReport(reportFile, testClassName);
+        CoverageTracker.generateReport("line-coverage-report.txt", testCls);
         System.out.println("Done!");
     }
 }
