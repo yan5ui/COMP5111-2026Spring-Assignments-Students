@@ -40,8 +40,6 @@
 
 Five regression test suites are in `src/test/randoop0` through `src/test/randoop4`, generated with seeds 0–4 and `--time-limit=300`. Each suite achieves ≥50% line coverage and ≥40% branch coverage (verified with EclEmma, screenshots in `screenshots/`).
 
-**To run a Randoop suite in Eclipse:** import the project, add `src/test/randoop<i>` as a source folder, and run `Regression_<i>_Test` with JUnit 4.
-
 ---
 
 ## Task 2: Soot-Based Line Coverage Tool
@@ -80,7 +78,7 @@ For full details see **[TASK2_README.md](TASK2_README.md)**.
 
 ## Task 3: LLM-Based Test Generation
 
-See **Task3_Report.pdf** for the full study. The generated test suites are in:
+See `Task3_Report.pdf` for the full study. The generated test suites are in:
 
 | Directory | Description |
 |-----------|-------------|
@@ -88,7 +86,7 @@ See **Task3_Report.pdf** for the full study. The generated test suites are in:
 | `src/test/llm_advanced/` | 65 tests from advanced (few-shot + CoT) prompt — 0 failures |
 | `src/test/llm_enhanced/` | 18 tests from enhanced-specification prompt — 0 failures |
 
-**LLM used:** GPT-5.2 via OpenAI API (Python SDK v2.26.0)
+LLM used: GPT-5.2 via OpenAI API (Python SDK v2.26.0)
 
 **To run an LLM test suite:**
 ```bash
