@@ -137,22 +137,3 @@ docker run --rm -v "$(pwd)":/work -w /work texlive/texlive make best
 
 `make best` runs `pdflatex` twice on each report.
 `make clean-aux` removes LaTeX intermediates.
-
-## Verifying
-
-```bash
-./scripts/verify_all.sh
-```
-
-Re-runs Task 2 and Task 3 and prints a side-by-side rank table for
-all four faults. I run this whenever I touch `Subject.java` or the
-FL tool.
-
-## Packaging
-
-```bash
-./scripts/package_submission.sh <studentID> <lastname> <firstname>
-```
-
-Produces `comp5111asn2-<studentID>-<lastname>-<firstname>.zip`
-without build outputs.
