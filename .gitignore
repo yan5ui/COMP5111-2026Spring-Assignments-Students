@@ -1,0 +1,30 @@
+# Build outputs
+target/
+sootOutput/
+logs/
+*.class
+
+# Spectrum / runtime data files
+spectrum-metadata.dat
+spectrum-pertest-*.dat
+
+# LaTeX intermediates
+*.aux
+*.log
+*.out
+*.toc
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# A1 archive (kept locally as reference, not committed)
+COMP5111-2026Spring-Assignments-Students.zip

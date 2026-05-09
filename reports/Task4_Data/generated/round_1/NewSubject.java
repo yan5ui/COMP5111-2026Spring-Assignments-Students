@@ -1,0 +1,304 @@
+package comp5111.assignment.cut;
+
+/**
+ * Task 4 reduced CUT.
+ *
+ * Ten public-static methods selected from {@link Subject}, with their
+ * documented contracts and one private helper (isOneOf).  The patched
+ * (correct) implementations from Task 2 are used so that EvoSuite's
+ * generated tests pin down the *intended* behaviour, against which the
+ * LLM's regenerated code is judged.
+ *
+ * Every signature is identical to the corresponding method in Subject.
+ */
+public class NewSubject {
+
+    // ---- 1 ----
+    /**
+     * Returns true if str starts with prefix ignoring case, else false.
+     * Returns false on any null argument or if str is shorter than prefix.
+     */
+    public static boolean startsWithIgnoreCase(String str, String prefix) {
+        if (str == null || prefix == null) {
+            return false;
+        }
+        if (str.length() < prefix.length()) {
+            return false;
+        }
+        for (int i = 0; i < prefix.length(); i++) {
+            char c1 = str.charAt(i);
+            char c2 = prefix.charAt(i);
+            if (Character.toLowerCase(c1) != Character.toLowerCase(c2)) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    // ---- 2 ----
+    /**
+     * Returns the prefix of str up to (but not including) the first
+     * character that appears in {@code terminators}.  If no terminator
+     * is found, the whole string is returned.
+     */
+    public static String parseToken(final String str, final char[] terminators) {
+        if (str == null) {
+            return null;
+        }
+        if (terminators == null || terminators.length == 0) {
+            return str;
+        }
+        int len = str.length();
+        for (int i = 0; i < len; i++) {
+            char ch = str.charAt(i);
+            if (isOneOf(ch, terminators)) {
+                return str.substring(0, i);
+            }
+        }
+        return str;
+    }
+
+    private static boolean isOneOf(char ch, final char[] charray) {
+        if (charray == null) {
+            return false;
+        }
+        for (char c : charray) {
+            if (c == ch) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    // ---- 3 ----
+    /**
+     * Returns the LAST contiguous run of digits in str interpreted as
+     * an int. Empty/null/no-digit inputs return 0.
+     * Examples: "1234" -> 1234, "a" -> 0, "1234a123" -> 123.
+     */
+    public static int extractIntInStr(String str) {
+        if (str == null || str.isEmpty()) {
+            return 0;
+        }
+        int end = -1;
+        int start = -1;
+        for (int i = str.length() - 1; i >= 0; i--) {
+            char c = str.charAt(i);
+            if (Character.isDigit(c)) {
+                if (end == -1) {
+                    end = i;
+                }
+                start = i;
+            } else if (end != -1) {
+                break;
+            }
+        }
+        if (end == -1) {
+            return 0;
+        }
+        int result = 0;
+        for (int i = start; i <= end; i++) {
+            result = result * 10 + (str.charAt(i) - '0');
+        }
+        return result;
+    }
+
+    // ---- 4 ----
+    /**
+     * Parses a version string of form a, a.b, a.b.c, or a.b.c.d into a 4-int
+     * array. Trailing components default to 0. More than 4 dot-segments or
+     * malformed (consecutive dots) produces null.
+     */
+    public static int[] getVersionNo(final String versionString) {
+        if (versionString == null || versionString.isEmpty()) {
+            return null;
+        }
+        String[] parts = versionString.split("\\.", -1);
+        if (parts.length == 0 || parts.length > 4) {
+            return null;
+        }
+        int[] version = new int[] {0, 0, 0, 0};
+        for (int i = 0; i < parts.length; i++) {
+            String p = parts[i];
+            if (p.isEmpty()) {
+                // malformed: consecutive dots or leading/trailing dot
+                return null;
+            }
+            int num = 0;
+            boolean hasDigit = false;
+            for (int j = 0; j < p.length(); j++) {
+                char c = p.charAt(j);
+                if (Character.isDigit(c)) {
+                    hasDigit = true;
+                    num = num * 10 + (c - '0');
+                }
+            }
+            if (!hasDigit) {
+                // no digit in this component is malformed
+                return null;
+            }
+            if (i == 0) {
+                // first component is most significant (a)
+                version[0] = num;
+            } else if (i == 1) {
+                version[1] = num;
+            } else if (i == 2) {
+                version[2] = num;
+            } else if (i == 3) {
+                version[3] = num;
+            }
+        }
+        return version;
+    }
+
+    // ---- 5 ----
+    /**
+     * Pads str on the left with padChar so the resulting length is at least
+     * length. Null str is treated as "". If str is already long enough it is
+     * returned unchanged.
+     */
+    public static String padLeft(String str, short length, char padChar) {
+        if (str == null) {
+            str = "";
+        }
+        int len = str.length();
+        if (length <= len) {
+            return str;
+        }
+        int pads = length - len;
+        StringBuilder sb = new StringBuilder(length);
+        for (int i = 0; i < pads; i++) {
+            sb.append(padChar);
+        }
+        sb.append(str);
+        return sb.toString();
+    }
+
+    // ---- 6 ----
+    /** Returns true iff year is a leap year (Gregorian rule). */
+    public static boolean judgeLeapYear(int year) {
+        if (year % 400 == 0) {
+            return true;
+        }
+        if (year % 100 == 0) {
+            return false;
+        }
+        return year % 4 == 0;
+    }
+
+    // ---- 7 ----
+    /**
+     * Returns the number of days in the given month (1-12) of the given
+     * year. Returns -1 if month is out of range. February uses leap-year
+     * rules.
+     */
+    public static int calcDaysInMonth(int year, int month) {
+        if (month < 1 || month > 12) {
+            return -1;
+        }
+        switch (month) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                return 31;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                return 30;
+            case 2:
+                return judgeLeapYear(year) ? 29 : 28;
+            default:
+                return -1;
+        }
+    }
+
+    // ---- 8 ----
+    /** Returns the calendar quarter (1-4) for month (1-12), or -1 if invalid. */
+    public static int getQuarter(int month) {
+        if (month < 1 || month > 12) {
+            return -1;
+        }
+        return (month - 1) / 3 + 1;
+    }
+
+    // ---- 9 ----
+    /**
+     * Converts a 3-char month abbreviation (case-sensitive, e.g. "Jan",
+     * "Sep") into its month number (1-12). Returns -1 on null, wrong
+     * length, or unknown abbreviation.
+     */
+    public static int monAbbr2month(String abrr) {
+        if (abrr == null || abrr.length() != 3) {
+            return -1;
+        }
+        switch (abrr) {
+            case "Jan":
+                return 1;
+            case "Feb":
+                return 2;
+            case "Mar":
+                return 3;
+            case "Apr":
+                return 4;
+            case "May":
+                return 5;
+            case "Jun":
+                return 6;
+            case "Jul":
+                return 7;
+            case "Aug":
+                return 8;
+            case "Sep":
+                return 9;
+            case "Oct":
+                return 10;
+            case "Nov":
+                return 11;
+            case "Dec":
+                return 12;
+            default:
+                return -1;
+        }
+    }
+
+    // ---- 10 ----
+    /**
+     * Inverse of monAbbr2month: returns "Jan".."Dec" for month 1..12, and
+     * "(invalid)" otherwise.
+     */
+    public static String month2MonAbbr(int month) {
+        switch (month) {
+            case 1:
+                return "Jan";
+            case 2:
+                return "Feb";
+            case 3:
+                return "Mar";
+            case 4:
+                return "Apr";
+            case 5:
+                return "May";
+            case 6:
+                return "Jun";
+            case 7:
+                return "Jul";
+            case 8:
+                return "Aug";
+            case 9:
+                return "Sep";
+            case 10:
+                return "Oct";
+            case 11:
+                return "Nov";
+            case 12:
+                return "Dec";
+            default:
+                return "(invalid)";
+        }
+    }
+}

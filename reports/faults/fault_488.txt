@@ -1,0 +1,34 @@
+Fault: src/main/java/comp5111/assignment/cut/Subject.java line 488
+Method: DateTimeAlgorithms.checkValidDate(int, int, int)
+
+Buggy line:
+    return day > 0 && day < daysInMonth;
+
+Patch (single-line):
+    day < daysInMonth          ->          day <= daysInMonth
+
+Why this is the fault.
+checkValidDate is called from daysBetweenDates and (transitively)
+daysBetweenDateStrings. With the strict `<`, the last day of every
+month is rejected (e.g. Jan 31, Apr 30, Jul 31). daysBetweenDates
+then throws IllegalArgumentException("Invalid date") and
+daysBetweenDateStrings catches it and returns Integer.MIN_VALUE.
+Failing tests I traced:
+
+  daysBetweenDateStrings("0100-01-31","0100-01-31") expected 0     got MIN
+  daysBetweenDateStrings("0007-07-31","0007-07-31") expected 0     got MIN
+  daysBetweenDateStrings("0002-04-30","0002-04-30") expected 0     got MIN
+  daysBetweenDateStrings("0100-10-31","0366-01-31") expected 96883 got MIN
+
+The Javadoc says `day` is "the day (1-31)" and calcDaysInMonth
+returns an inclusive upper bound (31 for January, 30 for April,
+28/29 for February). Switching `<` to `<=` lines the predicate up
+with calcDaysInMonth's semantics.
+
+Score and rank per suite. Line 488 has three booleanising stmts in
+Jimple; I report the highest-scoring one inside checkValidDate.
+
+  randoop0  : rank 80   score 0.1260
+  randoop1  : rank 90   score 0.1529
+  evosuite0 : rank 95   score 0.2236
+  evosuite1 : rank 97   score 0.2041

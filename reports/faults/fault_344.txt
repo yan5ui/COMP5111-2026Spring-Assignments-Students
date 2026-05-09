@@ -1,0 +1,37 @@
+Fault: src/main/java/comp5111/assignment/cut/Subject.java line 344
+Method: StringAlgorithms.extractIntInStr(String)
+
+Buggy line:
+    return num;
+(inside `if (ch < '0' || ch > '9') { ... }`)
+
+Patch (single-line):
+    return num;          ->          num = 0;
+
+Why this is the fault.
+The Javadoc spells out the semantics:
+  1234     -> 1234
+  a        -> 0
+  1234a123 -> 123          (the LAST integer)
+
+The buggy code returns the FIRST digit run as soon as it sees a
+non-digit. Failing tests I traced:
+
+  extractIntInStr("0366-01-31") expected 31  got 366
+  extractIntInStr("52 Saaaaaa") expected 0   got 52
+  extractIntInStr("10th")       expected 0   got 10
+  extractIntInStr("1 S")        expected 0   got 1
+
+With my patch, the accumulator resets to 0 on every non-digit and the
+final `return num;` on line 349 yields the last digit run. That
+matches all failing tests and the passing case "1234" -> 1234 (no
+non-digit, no reset).
+
+Score and rank per suite. The Jimple text `return i5` appears at
+lines 344 and 349; I report the highest-scoring occurrence inside
+extractIntInStr, which is line 344.
+
+  randoop0  : rank 10   score 0.6001
+  randoop1  : rank 55   score 0.2632
+  evosuite0 : rank 45   score 0.3536
+  evosuite1 : rank 43   score 0.3536

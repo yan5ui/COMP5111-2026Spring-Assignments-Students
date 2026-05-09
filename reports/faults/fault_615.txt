@@ -1,0 +1,38 @@
+Fault: src/main/java/comp5111/assignment/cut/Subject.java line 615
+Method: DateTimeAlgorithms.monAbbr2month(String)
+
+Buggy line:
+    if (hash == 5465466)
+(this is the branch meant to match "Sep" -> 9)
+
+Patch (single-line):
+    5465466          ->          5465456
+
+Why this is the fault.
+monAbbr2month uses a perfect-hash dispatch:
+    hash = (ch0 << 16) | (ch1 << 8) | ch2
+
+Hash for "Sep":
+    ('S' << 16) | ('e' << 8) | 'p'
+  = 83*65536 + 101*256 + 112
+  = 5439488 + 25856 + 112
+  = 5465456
+
+The source has 5465466, off by 10. No 3-char string hashes to that
+value, so the branch is dead and "Sep" falls through to `return -1`.
+I checked the other 11 constants against the same formula; they are
+all correct, so only this one line needs to change.
+
+Failing tests:
+  monAbbr2month("Sep") expected 9 got -1
+    (test243 in randoop1, test073 in evosuite0, test077 in evosuite1)
+
+Score and rank per suite. The faulty Jimple stmt is
+`if i7 != 5465466 goto (branch)`. randoop0 has no failing test that
+hits monAbbr2month("Sep"), so this stmt is never executed by a
+failing test in that suite (Ochiai = 0).
+
+  randoop0  : rank 670  score 0.0000
+  randoop1  : rank 100  score 0.1147
+  evosuite0 : rank 95   score 0.2236
+  evosuite1 : rank 94   score 0.2236

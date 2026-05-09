@@ -1,0 +1,463 @@
+\documentclass[manuscript,review,nonacm]{acmart}
+%
+% COMP5111 Assignment 2 -- Task 4 LLM-use report
+%
+
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{booktabs}
+
+\lstset{
+  basicstyle=\ttfamily\small,
+  breaklines=true,
+  columns=fullflexible,
+  frame=single,
+  framesep=4pt,
+  backgroundcolor=\color{gray!8},
+  keywordstyle=\bfseries\color{blue!60!black},
+  commentstyle=\itshape\color{green!50!black},
+  stringstyle=\color{red!50!black},
+  showstringspaces=false,
+}
+
+\setcopyright{none}
+\settopmatter{printacmref=false, printccs=false, printfolios=true}
+\renewcommand{\footnotetextcopyrightpermission}[1]{}
+\pagestyle{plain}
+
+\title{Task 4 \textendash{} Test-Driven LLM Code Generation\\
+       \large COMP5111 Assignment 2}
+\author{Zimo Ji}
+\affiliation{\institution{HKUST}\city{Hong Kong}\country{Hong Kong SAR}}
+
+\begin{document}
+\maketitle
+\thispagestyle{plain}
+
+\noindent\textit{The companion \texttt{Task4\_Iteration\_Trace.pdf}
+has the verbatim prompt + response + extracted code for every round.
+This report is the analysis only.}
+
+\section{Setup}
+
+\subsection{Selected methods}
+I picked ten public-static methods from \texttt{Subject.java} and put
+them in a reduced CUT (\texttt{reports/Task4\_Data/NewSubject.java}),
+plus one private helper (\texttt{isOneOf}) needed by
+\texttt{parseToken}. All public signatures are byte-identical to the
+originals:
+
+\begin{small}
+\begin{tabular}{rll}
+\toprule
+\# & Signature & From \texttt{Subject.java} \\
+\midrule
+1  & \texttt{boolean startsWithIgnoreCase(String, String)} & \texttt{StringAlgorithms} \\
+2  & \texttt{String  parseToken(String, char[])}           & \texttt{StringAlgorithms} \\
+3  & \texttt{int     extractIntInStr(String)}              & \texttt{StringAlgorithms} \\
+4  & \texttt{int[]   getVersionNo(String)}                 & \texttt{StringAlgorithms} \\
+5  & \texttt{String  padLeft(String, short, char)}         & \texttt{StringAlgorithms} \\
+6  & \texttt{boolean judgeLeapYear(int)}                   & \texttt{DateTimeAlgorithms} \\
+7  & \texttt{int     calcDaysInMonth(int, int)}            & \texttt{DateTimeAlgorithms} \\
+8  & \texttt{int     getQuarter(int)}                      & \texttt{DateTimeAlgorithms} \\
+9  & \texttt{int     monAbbr2month(String)}                & \texttt{DateTimeAlgorithms} \\
+10 & \texttt{String  month2MonAbbr(int)}                   & \texttt{DateTimeAlgorithms} \\
+\bottomrule
+\end{tabular}
+\end{small}
+
+I used the Task 2 fault-fixed implementations as ground truth so that
+EvoSuite's tests pin down the \emph{intended} contract, not the seeded
+faults.
+
+\subsection{EvoSuite generation}
+
+\begin{lstlisting}
+java -jar lib/evosuite-1.2.0.jar \
+    -class comp5111.assignment.cut.NewSubject \
+    -projectCP reports/Task4_Data/build/classes \
+    -Dsearch_budget=600 -Dstopping_condition=MaxTime \
+    -Dcriterion=LINE:BRANCH -Dassertion_strategy=ALL \
+    -Drandom_seed=2026
+\end{lstlisting}
+
+100\,\% LINE coverage (115/115) and 100\,\% BRANCH coverage (131/131)
+in 1\,s of search; 62 JUnit tests in the 414-line
+\texttt{NewSubject\_ESTest.java}.
+
+\subsection{LLM endpoint}
+OpenAI-compatible \texttt{/chat/completions},
+\texttt{temperature=0.1}. Primary model is \texttt{gpt-5.1}; I also
+ran \texttt{gpt-5.4} (stronger, footnoted in \S3) and
+\texttt{gpt-4o-mini} (weaker, ablation in \S6). Raw HTTP from the
+Python standard library, no SDK.
+
+\section{Prompt design}
+
+The same template every round. Four fixed parts; rounds $\ge$ 2 add
+two iteration-specific parts:
+
+\begin{lstlisting}
+<system>
+You are a senior Java engineer. Respond with exactly one fenced ```java code
+block as instructed.
+</system>
+
+<user>
+You are a Java engineer. Implement the class
+`comp5111.assignment.cut.NewSubject` so that every JUnit test in the
+provided test suite passes.
+
+Rules:
+ - Output exactly ONE fenced ```java code block containing the FULL contents
+   of NewSubject.java (package, imports if any, the entire class).
+ - Do NOT modify the test suite. Do NOT add main(). Keep the package and
+   class name unchanged. Method signatures shown below are mandatory.
+ - Output nothing outside the single code block.
+
+=== Method signatures + Javadoc (mandatory shape) ===
+<NewSubject.java with method bodies stripped to ";">
+
+=== EvoSuite-generated test suite (passes against the ground truth) ===
+<entire NewSubject_ESTest.java verbatim>
+
+=== Your previous implementation (round N-1) ===           # rounds >= 2
+<last LLM output>
+
+=== Test failures observed for that implementation ===     # rounds >= 2
+<list of "FAILURE>>>...<<<FAILURE" lines>
+</user>
+\end{lstlisting}
+
+I kept the Javadoc on purpose: it carries intent (e.g.\
+``\texttt{extractIntInStr} returns the LAST contiguous digit run'')
+that the test suite samples but does not state. Round-1 prompt is
+15\,138 chars; round 2 grows to about 24\,000 once I append the
+previous attempt and failing tests.
+
+\section{First-round result}
+
+\begin{tabular}{lc}
+\toprule
+Metric          & Round 1 \\
+\midrule
+Compilation OK  & yes \\
+Tests run       & 62 \\
+Tests failed    & \textbf{1} \\
+Pass rate       & \textbf{98.4\,\% (61/62)} \\
+\bottomrule
+\end{tabular}
+
+\medskip
+
+The single failure was
+
+\begin{lstlisting}
+test51 :: arrays first differed at element [0];
+         expected:<6> but was:<316>
+\end{lstlisting}
+
+\texttt{test51} calls
+\texttt{getVersionNo("\$S3P\&,*V+D\&1\{\%U6")} and expects
+\texttt{[6,0,0,0]}. Input has no \texttt{.}, so
+\texttt{String.split("\textbackslash{}\textbackslash{}.", -1)} returns
+one segment. \texttt{gpt-5.1} walked the segment forward and
+concatenated \emph{every} digit (\texttt{3}, \texttt{1}, \texttt{6}
+$\to$ \texttt{316}) instead of returning only the last contiguous
+digit run as the Javadoc says (\texttt{"\dots\&1\{\%U6"} $\to$
+\texttt{6}). The other 61 tests don't exercise this case (they have
+a leading digit, so forward and backward scans agree, or no digits at
+all).
+
+\medskip
+\noindent\textbf{Footnote (stronger backend).} With \texttt{gpt-5.4}
+and the same prompt, all 62 tests pass on round 1, no iteration
+needed. Artefacts under \texttt{reports/Task4\_Data/trial\_gpt54/}. I
+do not use it as the primary experiment because it leaves the
+iteration loop with nothing to do.
+
+\section{Final pass rate after refinement}
+
+I appended round 1's failure (\texttt{expected:<6> but was:<316>}) to
+the prompt. Round 2 fixed it: \texttt{gpt-5.1} rewrote the digit loop
+in \texttt{getVersionNo} to scan \textbf{backwards} from the end of
+the segment and record the last contiguous digit run. The diff inside
+\texttt{getVersionNo}:
+
+\begin{lstlisting}[language=Java]
+// round 1 (buggy): forward accumulator
+for (int j = 0; j < p.length(); j++) {
+    char c = p.charAt(j);
+    if (Character.isDigit(c)) { hasDigit = true;
+        num = num * 10 + (c - '0');
+    }
+}
+
+// round 2 (fixed): backward search for the last digit run
+int end = -1, start = -1;
+for (int j = p.length() - 1; j >= 0; j--) {
+    char c = p.charAt(j);
+    if (Character.isDigit(c)) {
+        if (end == -1) end = j;
+        start = j;
+    } else if (end != -1) {
+        break;
+    }
+}
+int num = 0;
+for (int j = start; j <= end; j++) num = num * 10 + (p.charAt(j) - '0');
+\end{lstlisting}
+
+Round 2 passes all 62 tests; my loop early-exits.
+
+\medskip
+\noindent\textbf{Final: 100\,\% (62/62) after 2 rounds.}
+
+\medskip
+
+Per-round artefacts:
+
+\begin{small}
+\begin{tabular}{ll}
+\toprule
+Path & Contents \\
+\midrule
+\texttt{reports/Task4\_Data/prompts/round\_\{1,2\}.txt}              & exact prompts                    \\
+\texttt{reports/Task4\_Data/llm\_outputs/round\_\{1,2\}.txt}         & raw LLM responses                \\
+\texttt{reports/Task4\_Data/generated/round\_\{1,2\}/NewSubject.java}& extracted Java each round        \\
+\texttt{reports/Task4\_Data/test\_results/round\_\{1,2\}.txt}        & compile + JUnit summary (json)   \\
+\texttt{reports/Task4\_Data/final/NewSubject.java}                   & round-2 implementation (= final) \\
+\texttt{reports/Task4\_Data/summary.json}                            & per-round metrics                \\
+\texttt{reports/LLM/Task4\_Iteration\_Trace.\{md,pdf\}}              & full trace                       \\
+\bottomrule
+\end{tabular}
+\end{small}
+
+\section{Similarities and differences vs Subject.java}
+
+I diffed the \textbf{final (round 2)} \texttt{NewSubject.java} from
+\texttt{gpt-5.1} against the matching ten methods of
+\texttt{Subject.java}.
+
+\subsection{Identical (modulo whitespace / comments)}
+\texttt{judgeLeapYear}, \texttt{calcDaysInMonth},
+\texttt{getQuarter}, \texttt{month2MonAbbr}, \texttt{padLeft}. Same
+control flow, same constants.
+
+\subsection{Same intent, different idiom}
+\begin{itemize}\itemsep1pt
+\item \texttt{startsWithIgnoreCase}. Original copies
+      \texttt{prefix.length()} chars and compares;
+      \texttt{gpt-5.1} walks the prefix with
+      \texttt{Character.toLowerCase(c1) != Character.toLowerCase(c2)}.
+      The LLM's loop avoids the substring allocation, behaviour is the
+      same.
+\item \texttt{getVersionNo}. Original walks with
+      \texttt{indexOf('.')} and a manual cursor in a
+      \texttt{do\,\dots\,while}; \texttt{gpt-5.1} (round 2) uses
+      \texttt{versionString.split("\textbackslash{}\textbackslash{}.", -1)},
+      validates \texttt{parts.length} and empty parts, then runs the
+      backward digit-run scan above. Same \texttt{int[4]} output.
+\item \texttt{parseToken}. Original returns
+      \texttt{str.substring(0, pos)} after a \texttt{while} loop;
+      \texttt{gpt-5.1} adds null/empty checks and returns
+      \texttt{str.substring(0, i)} directly inside the
+      matched-terminator branch. The buggy \texttt{pos++} of
+      \texttt{Subject.java} line~205 is absent (EvoSuite tested the
+      patched ground truth).
+\item \texttt{extractIntInStr}. Original is a single forward pass
+      that resets the accumulator on every non-digit.
+      \texttt{gpt-5.1} does a backward scan for the last digit run,
+      then a small forward accumulator inside it. Same contract, more
+      verbose.
+\end{itemize}
+
+\subsection{Different control structure}
+\texttt{monAbbr2month}. Original uses a perfect hash
+\texttt{(ch0<<16) | (ch1<<8) | ch2} and dispatches on twelve
+hard-coded integers -- one of which (\texttt{5465466} for ``Sep'')
+is the seeded fault from Task~2. \texttt{gpt-5.1} drops the hash and
+uses a Java~7+ \texttt{switch (abrr)}:
+
+\begin{lstlisting}[language=Java]
+switch (abrr) { case "Jan": return 1; ... case "Sep": return 9; ... }
+\end{lstlisting}
+
+Same return values, but the perfect-hash trick is gone. The LLM
+couldn't have known the original used it -- EvoSuite tests only
+observe return values.
+
+\subsection{LLM-introduced defensive checks}
+\texttt{gpt-5.1} consistently adds null/empty pre-checks the original
+sometimes omits (e.g.\ \texttt{parseToken} against null \texttt{str}
+or zero-length \texttt{terminators}). Doesn't break tests here, but
+would change the contract if the spec required NPE on null. The same
+instinct goes wrong on a weaker model (\S6).
+
+\section{Ablation: weaker backend model}
+
+To get iteration data and check how brittle round-1 convergence is, I
+re-ran the same prompt template, EvoSuite test suite, and
+\texttt{NewSubject.java} with \texttt{gpt-4o-mini}. Everything else
+(\texttt{temperature=0.1}, \texttt{max-rounds=5}, OpenAI-compatible
+endpoint) is identical.
+
+\begin{tabular}{ccccc}
+\toprule
+Round & compile\_ok & run & fail & pass rate \\
+\midrule
+1 & yes & 62 & 2 & 96.8\,\% \\
+2 & yes & 62 & 2 & 96.8\,\% \\
+3 & yes & 62 & 2 & 96.8\,\% \\
+4 & yes & 62 & 2 & 96.8\,\% \\
+5 & yes & 62 & 2 & 96.8\,\% \\
+\bottomrule
+\end{tabular}
+
+\medskip
+
+The weaker model converges fast to a near-correct implementation but
+\textbf{doesn't fix the last two failures} even after four rounds of
+feedback:
+
+\begin{itemize}\itemsep1pt
+\item \texttt{test43}: \texttt{calcDaysInMonth(-3324, 2)} expected
+      \texttt{29}, got \texttt{28}.
+\item \texttt{test51}:
+      \texttt{getVersionNo("\$S3P\&,*V+D\&1\{\%U6")} expected
+      \texttt{[6,0,0,0]}, got \texttt{null}
+      (\texttt{assertNotNull} failure).
+\end{itemize}
+
+Both come from over-defensive code that the model wrote on round 1
+and kept every subsequent round:
+
+\begin{itemize}\itemsep1pt
+\item In \texttt{judgeLeapYear}, \texttt{gpt-4o-mini} added an
+      unjustified guard
+      \texttt{if (year < 0) return false;}. The Javadoc says nothing
+      about the sign; the Gregorian rule works fine for negative
+      years. With this guard, every negative leap year is
+      mis-classified, so February of $-3324$ returns 28.
+\item In \texttt{getVersionNo}, \texttt{gpt-4o-mini} called
+      \texttt{Integer.parseInt(parts[i])} directly instead of the
+      spec's ``last digit run'' extraction (the original calls
+      \texttt{extractIntInStr}). \texttt{"\$S3P\&,*V+D\&1\{\%U6"} has
+      no \texttt{.} and no leading digit, so \texttt{parseInt} throws
+      \texttt{NumberFormatException}, and the LLM's
+      \texttt{catch (NumberFormatException e) \{ return null; \}}
+      returns \texttt{null} instead of \texttt{[6,0,0,0]}.
+\end{itemize}
+
+The model received the failure messages verbatim every round. Round 4
+sent it:
+
+\begin{lstlisting}
+2 of 62 tests failed.
+ - test43(...) :: expected:<29> but was:<28>
+ - test51(...) :: null
+\end{lstlisting}
+
+\dots and \texttt{gpt-4o-mini} still produced ``fixes'' with the same
+two bugs. The trace shows it rewriting the surrounding code each
+round (different idioms, slightly different control flow) but leaving
+the two over-defensive guards untouched. Two takeaways:
+
+\begin{enumerate}\itemsep1pt
+\item \textbf{Localising a bug from a high-level test message is hard
+      for weak models.} ``expected 29, was 28'' doesn't say which
+      line. Working out that the bug is in \texttt{judgeLeapYear}
+      (not \texttt{calcDaysInMonth}) takes counterfactual reasoning
+      that \texttt{gpt-4o-mini} doesn't do reliably.
+\item \textbf{The model has a strong prior toward defensive code}
+      that the spec doesn't require, and feedback that the defence is
+      wrong is not enough to override that prior.
+\end{enumerate}
+
+\texttt{gpt-5.4} (\S3 footnote) writes none of these guards and
+passes round 1 outright; primary \texttt{gpt-5.1} needs one round of
+feedback. Same prompt, same Javadoc, same tests; the difference is
+purely model capability. Per-round traces are in
+\texttt{reports/LLM/Task4\_Iteration\_Trace\_weak\_gpt4o\_mini.\{md,pdf\}}
+and \texttt{reports/Task4\_Data/weak\_gpt4o\_mini/}.
+
+\section{Insights}
+
+\textbf{Strengths.}
+\begin{itemize}\itemsep1pt
+\item \emph{Synthesis from spec + tests is fast and accurate.} On a
+      $\approx$250 LOC CUT with Javadoc + 100\,\% coverage tests,
+      \texttt{gpt-5.1} got 9 of 10 methods right on round 1 and the
+      last one after one round of feedback (\S4). \texttt{gpt-5.4}
+      passes round 1. Almost no prompt engineering beyond format
+      constraints.
+\item \emph{Iteration can localise and fix bugs from a high-level
+      test message.} In round 2, \texttt{gpt-5.1} took
+      \texttt{expected:<6> but was:<316>} and correctly diagnosed the
+      bug in \texttt{getVersionNo}'s digit extraction (not the test,
+      not \texttt{extractIntInStr}, not \texttt{String.split}).
+      Non-trivial inference.
+\item \emph{Idiomatic API choice.} Modern Java
+      (\texttt{switch (String)}, \texttt{String.split},
+      \texttt{Character.toLowerCase} loops) where legacy code would
+      not.
+\end{itemize}
+
+\textbf{Limitations.}
+\begin{itemize}\itemsep1pt
+\item \emph{Hidden invariants are erased.} The perfect-hash dispatch
+      in \texttt{monAbbr2month} is gone. A caller that depended on
+      the exact integer constants would break silently. Tests don't
+      observe internal control flow, so test-driven generation can't
+      recover it.
+\item \emph{No ``minimum-change'' notion.} Asked to reimplement, the
+      LLM rewrites. For single-line patching (Task 2 elsewhere),
+      this is the wrong tool.
+\item \emph{Spec-test conflict goes to the test.} If the Javadoc and
+      the EvoSuite tests disagree, the LLM follows the tests and
+      ignores the doc.
+\item \emph{Iteration doesn't always fix things (\S6).} On
+      \texttt{gpt-4o-mini} the same two bugs survived four rounds of
+      failure feedback.
+\end{itemize}
+
+\textbf{Limitations of EvoSuite-generated test cases.}
+\begin{itemize}\itemsep1pt
+\item \emph{Coverage saturates fast on simple methods.} 100\,\%
+      LINE+BRANCH in one second, but the tests are mostly
+      value-instance assertions
+      (\texttt{assertEquals("Sep", month2MonAbbr(9))}) that don't
+      express the contract.
+\item \emph{No equivalence-class abstraction.} 12 separate tests for
+      \texttt{month2MonAbbr} (one per valid month) plus several
+      invalid; a hand-written test would be parametric. The bloat
+      dominates the prompt budget (the test suite is over 95\,\% of
+      round-1 prompt size).
+\item \emph{Tests reflect whatever the implementation does.} If the
+      ground truth had been buggy, EvoSuite would have locked the bug
+      into the tests, and the LLM would have reproduced it.
+\end{itemize}
+
+\textbf{Suggestions for improving success rate.}
+\begin{enumerate}\itemsep1pt
+\item Always include the Javadoc, not just the tests. This was the
+      biggest lever in my run; without it the perfect-hash dispatch
+      in \texttt{monAbbr2month} could easily be reproduced as a
+      buggy table.
+\item In iteration rounds, send only the failing-test bodies + a
+      diff of the previous attempt, not the whole suite. My 11\,KB
+      suite is already heavy; on bigger CUTs it would exceed the
+      model's effective context.
+\item For single-line patches, use a different prompt shape -- full
+      method, suspected line(s) highlighted, failing test, and an
+      explicit ``do not rewrite any other line''.
+\item Augment EvoSuite with property-based tests (jqwik etc.).
+      Properties like \texttt{monAbbr2month(month2MonAbbr(m)) == m}
+      for $1\le m \le 12$ capture invariants that examples can't.
+\item Add a ``minimal-diff'' objective in the system message when
+      refactoring or patching.
+\end{enumerate}
+
+\noindent\textit{(Body word count, excluding code: about 1100.)}
+
+\end{document}

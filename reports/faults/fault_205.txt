@@ -1,0 +1,34 @@
+Fault: src/main/java/comp5111/assignment/cut/Subject.java line 205
+Method: StringAlgorithms.parseToken(String, char[])
+
+Buggy line:
+    pos++;
+(inside the `if (isOneOf(ch, terminators))` branch)
+
+Patch (single-line):
+    pos++;          ->          ;
+
+Why this is the fault.
+The Javadoc for parseToken says it returns "the parsed token", i.e.
+the prefix up to but not including the first terminator. The buggy
+version does `pos++` *before* `break`, so the returned substring
+includes the terminator. Failing tests I traced:
+
+  parseToken("2 M", {'#','4','4',' ','4','4'})  expected "2"  got "2 "
+  parseToken("0100-01-01###...", {'4','a',' ','4','#'})
+                                expected "0100-01-01"  got "0100-01-01#"
+  parseToken("=U[dDkbutQZ<K", terminators with 'Q')
+                                expected "=U[dDkbut"   got "=U[dDkbutQ"
+
+Removing the `pos++` on line 205 fixes all of them. Line 208's
+`pos++` (the one used when no terminator is found) is left alone, so
+strings without a terminator still return the whole string.
+
+Score and rank per suite. The Jimple text `i2 = i2 + 1` is shared
+between lines 205 and 208; I report the highest-scoring occurrence
+inside parseToken, which is line 205.
+
+  randoop0  : rank 7    score 0.6172
+  randoop1  : rank 13   score 0.7609
+  evosuite0 : rank 13   score 0.5000
+  evosuite1 : rank 12   score 0.5000
